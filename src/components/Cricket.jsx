@@ -41,6 +41,7 @@ const Cricket = () => {
         <ScrollAnimation>
           <h2 className="section-title">Cricket</h2>
         </ScrollAnimation>
+        
         <div className="cricket-content">
           <div className="cricket-image-gallery">
             <ScrollAnimation>
@@ -86,7 +87,7 @@ const Cricket = () => {
           </div>
           
           <ScrollAnimation>
-            <div className="cricket-info">
+            <div className="cricket-stats-section">
               <div className="cricket-stats-grid">
                 {stats.map((stat, index) => (
                   <div key={index} className="stat-card">
@@ -95,58 +96,69 @@ const Cricket = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </ScrollAnimation>
+        </div>
 
-              <div className="achievements-section">
-                <h3>Key Achievements</h3>
-                <div className="achievement-cards">
-                  {achievements.map((achievement, index) => (
-                    <div key={index} className="achievement-card">
-                      <div className="achievement-icon">{achievement.icon}</div>
-                      <div className="achievement-content">
-                        <h4>{achievement.title}</h4>
-                        <p>{achievement.desc}</p>
-                        {achievement.highlight && (
-                          <span className="highlight-badge">{achievement.highlight}</span>
-                        )}
-                      </div>
+        <div className="cricket-achievements-section">
+          <ScrollAnimation>
+            <div className="container">
+              <h3 className="subsection-title">Key Achievements</h3>
+              <div className="achievement-cards-grid">
+                {achievements.map((achievement, index) => (
+                  <div key={index} className="achievement-card-compact">
+                    <div className="achievement-icon-compact">{achievement.icon}</div>
+                    <div className="achievement-content-compact">
+                      <h4>{achievement.title}</h4>
+                      <p>{achievement.desc}</p>
+                      {achievement.highlight && (
+                        <span className="highlight-badge">{achievement.highlight}</span>
+                      )}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
+            </div>
+          </ScrollAnimation>
+        </div>
 
-              <div className="leadership-section">
-                <h3>Leadership Moments</h3>
-                <div className="leadership-cards">
-                  {leadershipMoments.map((moment, index) => (
-                    <div key={index} className="leadership-card">
-                      <div className="leadership-header">
-                        <h4>{moment.title}</h4>
-                        <span className="leadership-badge">{moment.highlight}</span>
-                      </div>
-                      <p>{moment.desc}</p>
+        <div className="cricket-leadership-section">
+          <ScrollAnimation>
+            <div className="container">
+              <h3 className="subsection-title">Leadership Moments</h3>
+              <div className="leadership-cards-grid">
+                {leadershipMoments.map((moment, index) => (
+                  <div key={index} className="leadership-card-compact">
+                    <div className="leadership-header-compact">
+                      <h4>{moment.title}</h4>
+                      <span className="leadership-badge">{moment.highlight}</span>
                     </div>
-                  ))}
+                    <p>{moment.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollAnimation>
+        </div>
+
+        <div className="cricket-roles-section">
+          <ScrollAnimation>
+            <div className="container">
+              <h3 className="subsection-title">Current Roles</h3>
+              <div className="role-cards-grid">
+                <div className="role-card-compact">
+                  <h4>NY Tri-State Development Captain</h4>
+                  <p>Coordinate tournament logistics, flight plans, uniform design, and team management for international competitions. Training under Colin Croft, all-time great fast bowler.</p>
+                </div>
+                <div className="role-card-compact">
+                  <h4>6-Year Founding Member</h4>
+                  <p>Florida Panthers Youth Cricket Academy - Grew academy from 5 to 30+ members through community outreach, coaching demos, and innovative marketing.</p>
+                </div>
+                <div className="role-card-compact">
+                  <h4>Volunteer & Ambassador</h4>
+                  <p>Support grassroots women's cricket through live commentary, streaming, match scoring, and tournament organization at American Women Cricket Club.</p>
                 </div>
               </div>
-
-              <div className="cricket-roles">
-                <h3>Current Roles</h3>
-                <div className="role-cards">
-                  <div className="role-card">
-                    <h4>NY Tri-State Development Captain</h4>
-                    <p>Coordinate tournament logistics, flight plans, uniform design, and team management for international competitions. Training under Colin Croft, all-time great fast bowler.</p>
-                  </div>
-                  <div className="role-card">
-                    <h4>6-Year Founding Member</h4>
-                    <p>Florida Panthers Youth Cricket Academy - Grew academy from 5 to 30+ members through community outreach, coaching demos, and innovative marketing.</p>
-                  </div>
-                  <div className="role-card">
-                    <h4>Volunteer & Ambassador</h4>
-                    <p>Support grassroots women's cricket through live commentary, streaming, match scoring, and tournament organization at American Women Cricket Club.</p>
-                  </div>
-                </div>
-              </div>
-
               <div className="cricket-links">
                 <a href="https://bit.ly/CricketStats" target="_blank" rel="noopener noreferrer" className="cta-button">
                   View Cricket Stats →

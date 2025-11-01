@@ -514,16 +514,11 @@
 
 /* Cricket Section */
 .cricket-content {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 3rem;
-    align-items: start;
+    margin-bottom: 3rem;
 }
 
-.cricket-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.cricket-stats-section {
+    margin-top: 2rem;
 }
 
 .cricket-image-gallery {
@@ -712,7 +707,142 @@
 }
 
 .cricket-links {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* Cricket Sub-sections */
+.cricket-achievements-section,
+.cricket-leadership-section,
+.cricket-roles-section {
+    padding: 3rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.subsection-title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.achievement-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.achievement-card-compact {
+    background: var(--dark-secondary);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    transition: transform 0.3s ease;
+}
+
+.achievement-card-compact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
+}
+
+.achievement-icon-compact {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.achievement-content-compact {
+    flex: 1;
+}
+
+.achievement-content-compact h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.achievement-content-compact p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.leadership-cards-grid,
+.role-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.leadership-card-compact {
+    background: var(--dark-secondary);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-card-compact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(233, 30, 99, 0.2);
+}
+
+.leadership-header-compact {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.leadership-card-compact h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.leadership-card-compact p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.role-card-compact {
+    background: var(--dark-secondary);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.role-card-compact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
+}
+
+.role-card-compact h4 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.role-card-compact p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 0;
 }
 
 /* Leadership Section */
@@ -1237,6 +1367,12 @@
     .cricket-content,
     .hive-hero,
     .hive-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-cards-grid,
+    .leadership-cards-grid,
+    .role-cards-grid {
         grid-template-columns: 1fr;
     }
 

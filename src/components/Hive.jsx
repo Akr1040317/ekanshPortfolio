@@ -11,9 +11,9 @@ const Hive = () => {
 
   const milestones = [
     { title: '5th Place National Spelling Bee', desc: 'Used pattern-based approach that inspired Hive', year: '2022' },
-    { title: 'MVP Launch', desc: 'Piloted at local elementary school—winner was a Hive user', year: '2023' },
-    { title: 'UAE Partnership', desc: 'Became official learning platform for UAE National Spelling Bee', year: '2024' },
-    { title: 'Scale & Growth', desc: '500+ users, 50% conversion rate, pending county evaluation', year: '2025' }
+    { title: 'Research & Curriculum Design', desc: 'Spent year researching and designing curriculum based on pattern-recognition approach', year: '2023' },
+    { title: 'iOS Beta Release', desc: 'Launched iOS beta version of the platform', year: '2024' },
+    { title: 'UAE Partnership', desc: 'Became official learning platform for UAE National Spelling Bee', year: '2025' }
   ];
 
   return (
