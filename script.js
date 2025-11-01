@@ -71,7 +71,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all sections and cards
 document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.section, .essay-card, .project-card, .cricket-story, .hive-description');
+    const sections = document.querySelectorAll('.section, .interest-card, .project-card, .cricket-story, .hive-description, .about-text, .about-image-placeholder');
     
     sections.forEach(section => {
         section.style.opacity = '0';

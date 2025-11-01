@@ -256,14 +256,14 @@ body {
     background-clip: text;
 }
 
-/* Essays Section */
-.essays-grid {
+/* Interests Section - Things I Like To Do */
+.interests-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
 }
 
-.essay-card {
+.interest-card {
     background: var(--dark-secondary);
     border-radius: 20px;
     overflow: hidden;
@@ -271,12 +271,12 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.essay-card:hover {
+.interest-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(156, 39, 176, 0.3);
 }
 
-.essay-image-placeholder {
+.interest-image-placeholder {
     width: 100%;
     height: 300px;
     background: var(--gradient-3);
@@ -287,20 +287,20 @@ body {
     gap: 1rem;
 }
 
-.essay-image-placeholder span {
+.interest-image-placeholder span {
     font-size: 4rem;
 }
 
-.essay-image-placeholder p {
+.interest-image-placeholder p {
     color: var(--text-secondary);
     font-weight: 500;
 }
 
-.essay-content {
+.interest-content {
     padding: 2rem;
 }
 
-.essay-content h3 {
+.interest-content h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
     background: var(--gradient-2);
@@ -309,7 +309,7 @@ body {
     background-clip: text;
 }
 
-.essay-content p {
+.interest-content p {
     margin-bottom: 1rem;
     color: var(--text-secondary);
     line-height: 1.8;
@@ -497,6 +497,66 @@ body {
     line-height: 1.6;
 }
 
+/* About Section - What You Should Know About Me */
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+.about-text {
+    background: var(--dark-secondary);
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.about-text h3:first-child {
+    margin-top: 0;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.about-image-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: var(--gradient-2);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: sticky;
+    top: 100px;
+}
+
+.about-image-placeholder span {
+    font-size: 5rem;
+}
+
+.about-image-placeholder p {
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     background: var(--dark-secondary);
@@ -604,10 +664,25 @@ body {
         height: 250px;
     }
 
-    .essay-content,
+    .interest-content,
     .cricket-story,
-    .hive-description {
+    .hive-description,
+    .about-text {
         padding: 1.5rem;
+    }
+
+    .interests-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image-placeholder {
+        position: relative;
+        top: 0;
+        aspect-ratio: 16/9;
     }
 
     .projects-grid {
