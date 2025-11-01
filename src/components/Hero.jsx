@@ -7,7 +7,7 @@ const Hero = () => {
         <h1 className="hero-title">
           <span className="gradient-text">Ekansh Rastogi</span>
         </h1>
-        <p className="hero-subtitle">Engineering • Cricket • Innovation</p>
+        <p className="hero-subtitle">IB Senior at Seminole High School • Co-Founder of Hive Education • National Spelling Bee Finalist • Cricket Champion</p>
         <div className="hero-image-placeholder">
           <div className="placeholder-content">
             <span>📷</span>
@@ -23,4 +23,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

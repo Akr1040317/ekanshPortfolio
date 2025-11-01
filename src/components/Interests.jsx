@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from './ScrollAnimation';
 
 const Interests = () => {
   const interests = [
@@ -15,7 +16,15 @@ const Interests = () => {
       icon: '🦾',
       description: [
         "I'm passionate about robotics and engineering, particularly when I can inspire others through hands-on experiences. I love the creative problem-solving that comes with building robots and organizing events that bring people together around technology.",
-        "There's something magical about seeing students explore robotics for the first time—watching their eyes light up as they discover that engineering goes beyond metal parts and computer cores. It's about providing a platform for others to find their potential."
+        "Through founding Markham Mechatronic Madness, I've created a platform where students can explore robotics beyond metal parts and computer cores—discovering that engineering is about providing opportunities for others to find their potential."
+      ]
+    },
+    {
+      title: 'Tennis',
+      icon: '🎾',
+      description: [
+        "I'm a 3-year Varsity Tennis Letterman and 2x All-County Athlete. Tennis has been an important part of my athletic journey, teaching me discipline, persistence, and the value of practice and dedication.",
+        "While cricket remains my primary passion, tennis has helped me develop as a well-rounded athlete and competitor."
       ]
     }
   ];
@@ -23,21 +32,25 @@ const Interests = () => {
   return (
     <section id="interests" className="section">
       <div className="container">
-        <h2 className="section-title">Things I Like To Do</h2>
+        <ScrollAnimation>
+          <h2 className="section-title">Things I Like To Do</h2>
+        </ScrollAnimation>
         <div className="interests-grid">
           {interests.map((interest, index) => (
-            <div key={index} className="interest-card">
-              <div className="interest-image-placeholder">
-                <span>{interest.icon}</span>
-                <p>{interest.title} Image</p>
+            <ScrollAnimation key={index}>
+              <div className="interest-card">
+                <div className="interest-image-placeholder">
+                  <span>{interest.icon}</span>
+                  <p>{interest.title} Image</p>
+                </div>
+                <div className="interest-content">
+                  <h3>{interest.title}</h3>
+                  {interest.description.map((para, i) => (
+                    <p key={i}>{para}</p>
+                  ))}
+                </div>
               </div>
-              <div className="interest-content">
-                <h3>{interest.title}</h3>
-                {interest.description.map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
-              </div>
-            </div>
+            </ScrollAnimation>
           ))}
         </div>
       </div>
@@ -46,4 +59,3 @@ const Interests = () => {
 };
 
 export default Interests;
-
