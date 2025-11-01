@@ -1,0 +1,21 @@
+{
+  "name": "ekansh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Ekansh Rastogi",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "dev": "npx http-server -p 8080 -o"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "personal"
+  ],
+  "author": "Ekansh Rastogi",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
+
