@@ -5,6 +5,7 @@ import Hive from './components/Hive';
 import Cricket from './components/Cricket';
 import Projects from './components/Projects';
 import Interests from './components/Interests';
+import Honors from './components/Honors';
 import About from './components/About';
 import Footer from './components/Footer';
 import './App.css';
@@ -18,6 +19,7 @@ function App() {
       <Cricket />
       <Projects />
       <Interests />
+      <Honors />
       <About />
       <Footer />
     </div>

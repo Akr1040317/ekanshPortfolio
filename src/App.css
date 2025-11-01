@@ -1264,6 +1264,10 @@
         grid-template-columns: 1fr;
     }
 
+    .honors-grid {
+        grid-template-columns: 1fr;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1348,6 +1352,115 @@
     }
 }
 
+/* Honors Section */
+.honors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.honor-card {
+    background: var(--dark-secondary);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.honor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
+}
+
+.honor-icon {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.honor-content {
+    flex: 1;
+}
+
+.honor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.75rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.honor-header h3 {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    margin: 0;
+    font-weight: 600;
+}
+
+.honor-level {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.honor-level.national {
+    background: var(--gradient-2);
+    color: var(--text-primary);
+}
+
+.honor-level.international {
+    background: var(--gradient-3);
+    color: var(--text-primary);
+}
+
+.honor-level.regional {
+    background: rgba(74, 144, 226, 0.2);
+    color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.honor-level.county {
+    background: rgba(255, 107, 53, 0.2);
+    color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+.honor-level.school {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.honor-achievement {
+    font-size: 1.2rem;
+    font-weight: 700;
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 0.5rem;
+}
+
+.honor-year {
+    color: var(--orange);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.honor-details {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
@@ -1367,6 +1480,10 @@
 
     .section-title {
         font-size: 1.75rem;
+    }
+
+    .honors-grid {
+        grid-template-columns: 1fr;
     }
 }
 

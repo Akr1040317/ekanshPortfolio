@@ -33,7 +33,7 @@ const About = () => {
             <div className="about-text">
               <div className="about-intro">
                 <h3>IB Senior at Seminole High School</h3>
-                <p>Passionate about combining entrepreneurship, technology, and innovation to create solutions in educational technology. Currently ranked 13th out of 888 students with a 4.735 weighted GPA.</p>
+                <p>I'm passionate about combining entrepreneurship, technology, and innovation to create solutions in educational technology. Currently ranked 13th out of 888 students with a 4.735 weighted GPA, I balance academics, athletics, and business ventures.</p>
               </div>
 
               <div className="highlights-grid">
@@ -81,23 +81,10 @@ const About = () => {
                 </div>
               </div>
 
-              <div className="about-leadership">
-                <h3>Leadership Philosophy</h3>
-                <p>I believe leadership isn't about control—it's about collaboration and empowering others. When I captained the US team at the Sir Garfield Sobers International Tournament, I faced my biggest challenge: leading a group of strangers to victory.</p>
-                <p>After an early loss, I organized team dinners and created space for each player to share insights. I delegated responsibilities—Shiloh kept players accountable, Ajay refined batting strategies, Dave led spin bowlers. Each game produced an unlikely hero because I focused on lifting everyone up, not carrying the burden alone.</p>
-                <p>This same approach helped me redesign Speech & Debate club meetings, tripling active membership. As co-captain, I provided personalized mentorship that doubled retention rates. Leadership, to me, means creating platforms where others can excel.</p>
-              </div>
-
-              <div className="about-approach">
-                <h3>Innovation Through Unconventional Paths</h3>
-                <p>I started studying for the Spelling Bee in 5th grade, learning through patterns and roots while others memorized thousands of words. This unconventional approach took me to 5th place nationally—out of 10 million participants.</p>
-                <p>I realized my pattern-based method had value beyond my own success. So I built Hive, an EdTech platform that teaches spelling through pattern-recognition instead of rote memorization. What began as a different approach to spelling became a platform serving 500+ users and the official learning partner for the UAE's national spelling bee.</p>
-                <p>Unconventional paths aren't misguided—they guide us in new directions.</p>
-              </div>
-
-              <div className="about-aspirations">
-                <h3>Aspirations</h3>
-                <p>Looking to study in the <strong>Jerome Fisher M&T Program</strong> and the <strong>Wharton School</strong>, combining engineering and business to create meaningful impact in EdTech and social entrepreneurship.</p>
+              <div className="about-vision">
+                <h3>Looking Forward</h3>
+                <p>I'm excited about the <strong>Jerome Fisher M&T Program</strong> and the <strong>Wharton School</strong>—where I can merge engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
+                <p>My goal is to create platforms that help others discover their potential, whether through innovative learning methods, leadership opportunities, or community-building initiatives.</p>
               </div>
 
               <div className="about-contact">

@@ -2,29 +2,46 @@ import React from 'react';
 import ScrollAnimation from './ScrollAnimation';
 
 const Interests = () => {
-  const interests = [
+  const activities = [
     {
-      title: 'Cooking',
-      icon: '🍛',
-      description: [
-        "I find joy in transforming simple ingredients into something special. Cooking is my way of blessing the mundane and turning what sustains us into what nourishes us. I especially love preparing dishes like paneer tikka biryani, following precise sequences of ingredients—each step matters, from the first paneer tikka to the final saffron and biryani masala.",
-        "My passion for cooking connects me to my heritage, bringing together flavors from different cultures. I've spent hours hand-picking herbs and preparing dishes to share with classmates and teachers, turning meals into expressions of love, luxury, and cultural heritage."
-      ]
-    },
-    {
-      title: 'Robotics & Engineering',
-      icon: '🦾',
-      description: [
-        "I'm passionate about robotics and engineering, particularly when I can inspire others through hands-on experiences. I love the creative problem-solving that comes with building robots and organizing events that bring people together around technology.",
-        "Through founding Markham Mechatronic Madness, I've created a platform where students can explore robotics beyond metal parts and computer cores—discovering that engineering is about providing opportunities for others to find their potential."
-      ]
-    },
-    {
-      title: 'Tennis',
-      icon: '🎾',
-      description: [
-        "I'm a 3-year Varsity Tennis Letterman and 2x All-County Athlete. Tennis has been an important part of my athletic journey, teaching me discipline, persistence, and the value of practice and dedication.",
-        "While cricket remains my primary passion, tennis has helped me develop as a well-rounded athlete and competitor."
+      category: 'Activities & Hobbies',
+      items: [
+        {
+          title: 'Cooking',
+          icon: '🍛',
+          description: 'I love cooking biryani—paneer tikka biryani with ghee, cilantro, mint, extra fried onions, saffron, and biryani masala. There\'s something meditative about following the precise sequence of ingredients. I spend hours hand-picking herbs (seriously, one step takes 2+ hours) and sharing the finished dish with classmates and teachers. Cooking connects me to my heritage—the flavors, the techniques, the stories behind each dish.',
+          image: 'Cooking Image'
+        },
+        {
+          title: 'Clash Royale',
+          icon: '🎮',
+          description: 'Yes, I play Clash Royale. It\'s gloriously useless—and that\'s what I love about it. A three-minute battle that means nothing, yet somehow means everything. I study patterns like a statistician, optimize elixir economies, predict moves, then lose to an ill-timed Fireball and laugh anyway. In a world that demands purpose, Clash Royale asks for none. It\'s a unique kind of freedom—strategy and whimsy, data science and chaos, all at once.',
+          image: 'Gaming Image'
+        },
+        {
+          title: 'Model United Nations',
+          icon: '🌍',
+          description: '3-year competitor at Seminole High School. Selected to represent school at PrincetonMUNC (chosen from 128 delegates) and GatorMUN (hosted by UF). Achieved Outstanding Delegate at PrincetonMUNC and SeminoleMUN. I mentor newer members and love the diplomacy, research, and problem-solving that MUN demands.',
+          image: 'MUN Image'
+        },
+        {
+          title: 'Robotics & Engineering',
+          icon: '🦾',
+          description: 'Founded Markham Mechatronic Madness—an annual event at Markham Woods Middle School where community members interact with student-built robots. The event raises funds to sustain the robotics program and I\'m invited back each year as chief guest of honor. I love seeing students explore robotics beyond metal parts and computer cores.',
+          image: 'Robotics Image'
+        },
+        {
+          title: 'Tennis',
+          icon: '🎾',
+          description: '3-year Varsity Tennis Letterman, playing singles line 5. 2x winner of All-County Athlete Academic Achievement Award. Tennis teaches discipline, persistence, and the value of practice—skills that translate to everything else I do.',
+          image: 'Tennis Image'
+        },
+        {
+          title: 'Book Writing',
+          icon: '📖',
+          description: 'Currently writing "Spellbound: A Parent\'s Guide to Raising Young Spellers"—a guide helping parents introduce spelling to their kids. Combining my experience as a National Spelling Bee finalist, Hive co-founder, and NorthSouth Foundation coach to create something that helps parents navigate spelling bee preparation.',
+          image: 'Writing Image'
+        }
       ]
     }
   ];
@@ -33,26 +50,28 @@ const Interests = () => {
     <section id="interests" className="section">
       <div className="container">
         <ScrollAnimation>
-          <h2 className="section-title">Things I Like To Do</h2>
+          <h2 className="section-title">Activities & Interests</h2>
         </ScrollAnimation>
-        <div className="interests-grid">
-          {interests.map((interest, index) => (
-            <ScrollAnimation key={index}>
-              <div className="interest-card">
-                <div className="interest-image-placeholder">
-                  <span>{interest.icon}</span>
-                  <p>{interest.title} Image</p>
-                </div>
-                <div className="interest-content">
-                  <h3>{interest.title}</h3>
-                  {interest.description.map((para, i) => (
-                    <p key={i}>{para}</p>
-                  ))}
-                </div>
-              </div>
-            </ScrollAnimation>
-          ))}
-        </div>
+        {activities.map((category, categoryIndex) => (
+          <div key={categoryIndex}>
+            <div className="interests-grid">
+              {category.items.map((activity, index) => (
+                <ScrollAnimation key={index}>
+                  <div className="interest-card">
+                    <div className="interest-image-placeholder">
+                      <span>{activity.icon}</span>
+                      <p>{activity.image}</p>
+                    </div>
+                    <div className="interest-content">
+                      <h3>{activity.title}</h3>
+                      <p>{activity.description}</p>
+                    </div>
+                  </div>
+                </ScrollAnimation>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );
