@@ -83,7 +83,7 @@ const About = () => {
 
               <div className="about-vision">
                 <h3>Looking Forward</h3>
-                <p>I'm excited about the <strong>Jerome Fisher M&T Program</strong> and the <strong>Wharton School</strong>—where I can merge engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
+                <p>I'm excited about merging engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
                 <p>My goal is to create platforms that help others discover their potential, whether through innovative learning methods, leadership opportunities, or community-building initiatives.</p>
               </div>
 
