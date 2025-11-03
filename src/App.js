@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Interests from './components/Interests';
 import Honors from './components/Honors';
 import About from './components/About';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -21,6 +22,7 @@ function App() {
       <Interests />
       <Honors />
       <About />
+      <Contact />
       <Footer />
     </div>
   );

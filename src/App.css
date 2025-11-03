@@ -1093,6 +1093,15 @@
     margin-top: 1rem;
 }
 
+/* Contact section */
+.contact-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
 /* About Section */
 .about-content {
     display: grid;
