@@ -17,6 +17,14 @@ const Hero = () => {
           <a href="#projects" className="cta-button secondary">
             View Projects
           </a>
+          <a 
+            href="https://www.linkedin.com/in/ekansh-rastogi-378b41315/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="cta-button secondary"
+          >
+            LinkedIn
+          </a>
         </div>
       </div>
       <div className="scroll-indicator">
