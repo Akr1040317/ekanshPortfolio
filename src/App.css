@@ -375,8 +375,10 @@
 .hive-image-gallery {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.25rem;
     max-width: 100%;
+    position: sticky;
+    top: 100px;
 }
 
 .hive-gallery-item {
@@ -410,28 +412,38 @@
 
 .detail-card {
     background: var(--dark-secondary);
-    padding: 1.5rem;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     overflow-wrap: break-word;
     word-wrap: break-word;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.detail-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.12);
 }
 
 .detail-card h4 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
     color: var(--text-primary);
     background: var(--gradient-2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
 .detail-card p {
     color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 0.95rem;
-    margin-bottom: 1rem;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
     font-family: 'Lora', serif;
 }
 
@@ -447,19 +459,21 @@
 
 .hive-list li {
     color: var(--text-secondary);
-    line-height: 1.7;
-    font-size: 0.95rem;
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 0.875rem;
+    padding-left: 1.75rem;
     position: relative;
+    font-family: 'Lora', serif;
 }
 
 .hive-list li::before {
-    content: '•';
+    content: '→';
     position: absolute;
     left: 0;
     color: var(--purple);
     font-weight: bold;
+    font-size: 1.1rem;
 }
 
 .hive-list li:last-child {
@@ -479,69 +493,96 @@
 
 /* Hive Journey Timeline */
 .hive-content-wrapper {
-    margin-top: 3rem;
+    margin-top: 4rem;
 }
 
 .hive-journey-section {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
 .hive-journey-section h3 {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
     text-align: center;
     background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 700;
 }
 
 .journey-timeline {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 1.25rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
     max-width: 100%;
 }
 
 .hive-info-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 2.5rem;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 3rem;
     align-items: start;
 }
 
 .milestone-card {
     background: var(--dark-secondary);
-    padding: 1.5rem;
-    border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.75rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     border-left: 4px solid var(--purple);
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.milestone-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.05), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.milestone-card:hover::before {
+    opacity: 1;
 }
 
 .milestone-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(156, 39, 176, 0.25);
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
 .milestone-year {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 700;
-    color: var(--orange);
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     margin-bottom: 0.75rem;
+    display: inline-block;
 }
 
 .milestone-content h4 {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--text-primary);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
 .milestone-content p {
     color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    font-size: 0.95rem;
+    line-height: 1.7;
     margin: 0;
+    font-family: 'Lora', serif;
 }
 
 /* Cricket Section */
