@@ -57,80 +57,82 @@ const Hive = () => {
           </div>
         </ScrollAnimation>
 
-        <div className="hive-journey">
+        <div className="hive-content-wrapper">
           <ScrollAnimation>
-            <h3>The Journey</h3>
-            <div className="journey-timeline">
-              {milestones.map((milestone, index) => (
-                <div key={index} className="milestone-card">
-                  <div className="milestone-year">{milestone.year}</div>
-                  <div className="milestone-content">
-                    <h4>{milestone.title}</h4>
-                    <p>{milestone.desc}</p>
+            <div className="hive-journey-section">
+              <h3>The Journey</h3>
+              <div className="journey-timeline">
+                {milestones.map((milestone, index) => (
+                  <div key={index} className="milestone-card">
+                    <div className="milestone-year">{milestone.year}</div>
+                    <div className="milestone-content">
+                      <h4>{milestone.title}</h4>
+                      <p>{milestone.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </ScrollAnimation>
+
+          <div className="hive-info-grid">
+            <ScrollAnimation>
+              <div className="hive-details">
+                <div className="detail-card">
+                  <h4>Current Status</h4>
+                  <ul className="hive-list">
+                    <li>500+ active users on platform</li>
+                    <li>Official learning partner for UAE Spelling Bee (2,000+ participants)</li>
+                    <li>50% free-to-paid conversion rate</li>
+                    <li>Launched at Goldsboro Elementary and Sanford Middle</li>
+                    <li>Pending evaluation in Seminole County Public Schools (40,000 students)</li>
+                  </ul>
+                </div>
+
+                <div className="detail-card">
+                  <h4>My Role & Impact</h4>
+                  <p>Lead marketing, content creation, and customer acquisition. Manage interns and negotiate partnerships with 500+ educators and administrators globally.</p>
+                  <p>Featured on cover of Stroll Heathrow and in National Spelling Bee Magazine for combining cricket and spelling passions.</p>
+                  <p className="featured-note">Currently writing "Spellbound: A Parent's Guide to Raising Young Spellers"</p>
+                </div>
+
+                <div className="detail-card">
+                  <h4>The Innovation</h4>
+                  <p>While others memorized thousands of words daily, I learned through patterns, rules, and linguistic roots. This unconventional approach became a scalable platform helping students learn spelling more effectively than rote memorization.</p>
+                  <p>What started as a different way to study became a proven method now used by thousands.</p>
+                </div>
+              </div>
+            </ScrollAnimation>
+
+            <ScrollAnimation>
+              <div className="hive-image-gallery">
+                <div className="hive-gallery-item">
+                  <div className="image-placeholder">
+                    <span>📷</span>
+                    <p>Hive Image 1</p>
                   </div>
                 </div>
-              ))}
-            </div>
-          </ScrollAnimation>
-        </div>
-
-        <div className="hive-content-grid">
-          <ScrollAnimation>
-            <div className="hive-image-gallery">
-              <div className="hive-gallery-item">
-                <div className="image-placeholder">
-                  <span>📷</span>
-                  <p>Hive Image 1</p>
+                <div className="hive-gallery-item">
+                  <div className="image-placeholder">
+                    <span>📷</span>
+                    <p>Hive Image 2</p>
+                  </div>
+                </div>
+                <div className="hive-gallery-item">
+                  <div className="image-placeholder">
+                    <span>📷</span>
+                    <p>Hive Image 3</p>
+                  </div>
+                </div>
+                <div className="hive-gallery-item">
+                  <div className="image-placeholder">
+                    <span>📷</span>
+                    <p>Hive Image 4</p>
+                  </div>
                 </div>
               </div>
-              <div className="hive-gallery-item">
-                <div className="image-placeholder">
-                  <span>📷</span>
-                  <p>Hive Image 2</p>
-                </div>
-              </div>
-              <div className="hive-gallery-item">
-                <div className="image-placeholder">
-                  <span>📷</span>
-                  <p>Hive Image 3</p>
-                </div>
-              </div>
-              <div className="hive-gallery-item">
-                <div className="image-placeholder">
-                  <span>📷</span>
-                  <p>Hive Image 4</p>
-                </div>
-              </div>
-            </div>
-          </ScrollAnimation>
-
-          <ScrollAnimation>
-            <div className="hive-details">
-              <div className="detail-card">
-                <h4>Current Status</h4>
-                <ul className="hive-list">
-                  <li>500+ active users on platform</li>
-                  <li>Official learning partner for UAE Spelling Bee (2,000+ participants)</li>
-                  <li>50% free-to-paid conversion rate</li>
-                  <li>Launched at Goldsboro Elementary and Sanford Middle</li>
-                  <li>Pending evaluation in Seminole County Public Schools (40,000 students)</li>
-                </ul>
-              </div>
-
-              <div className="detail-card">
-                <h4>My Role & Impact</h4>
-                <p>Lead marketing, content creation, and customer acquisition. Manage interns and negotiate partnerships with 500+ educators and administrators globally.</p>
-                <p>Featured on cover of Stroll Heathrow and in National Spelling Bee Magazine for combining cricket and spelling passions.</p>
-                <p className="featured-note">Currently writing "Spellbound: A Parent's Guide to Raising Young Spellers"</p>
-              </div>
-
-              <div className="detail-card">
-                <h4>The Innovation</h4>
-                <p>While others memorized thousands of words daily, I learned through patterns, rules, and linguistic roots. This unconventional approach became a scalable platform helping students learn spelling more effectively than rote memorization.</p>
-                <p>What started as a different way to study became a proven method now used by thousands.</p>
-              </div>
-            </div>
-          </ScrollAnimation>
+            </ScrollAnimation>
+          </div>
         </div>
       </div>
     </section>
