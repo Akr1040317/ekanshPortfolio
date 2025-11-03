@@ -122,7 +122,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 8rem 2rem 4rem;
+    padding: 6rem 2rem 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -144,6 +144,7 @@
     max-width: 800px;
     z-index: 1;
     position: relative;
+    margin-top: -2rem;
 }
 
 .hero-title {
