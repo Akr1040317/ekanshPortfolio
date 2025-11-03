@@ -1,4 +1,5 @@
 import React from 'react';
+import portrait from '../assets/ekanshFinal.png';
 import ScrollAnimation from './ScrollAnimation';
 
 const About = () => {
@@ -33,7 +34,20 @@ const About = () => {
             <div className="about-text">
               <div className="about-intro">
                 <h3>IB Senior at Seminole High School</h3>
-                <p>I'm passionate about combining entrepreneurship, technology, and innovation to create solutions in educational technology. Currently ranked 13th out of 888 students with a 4.735 weighted GPA, I balance academics, athletics, and business ventures.</p>
+                <p>
+                  Words taught me to notice details. Training for the Scripps National Spelling Bee wasn’t just
+                  about memorizing roots and rules; it was an early lesson in curiosity, discipline, and pattern
+                  recognition. I learned to ask why a word looks the way it does, where it came from, and how
+                  meaning evolves. That same instinct drives my work today—whether I’m building a product,
+                  refining a process, or collaborating with a team.
+                </p>
+                <p>
+                  As Co‑Founder of Hive Education LLC, I’m channeling that curiosity into entrepreneurship. I love
+                  turning ideas into useful tools, listening to learners, and shipping things that make education
+                  more accessible. The IB Diploma program sharpened my ability to synthesize across disciplines—
+                  engineering mindsets, human stories, and business constraints. I’m excited to keep building at the
+                  intersection of learning and technology, where thoughtful design can unlock potential for others.
+                </p>
               </div>
 
               <div className="highlights-grid">
@@ -96,8 +110,7 @@ const About = () => {
           </ScrollAnimation>
           <ScrollAnimation>
             <div className="about-image-placeholder">
-              <span>👤</span>
-              <p>About Me Image</p>
+              <img src={portrait} alt="Ekansh Rastogi professional portrait" style={{ width: '100%', height: 'auto', borderRadius: '16px', display: 'block' }} />
             </div>
           </ScrollAnimation>
         </div>
