@@ -333,6 +333,7 @@
     line-height: 1.8;
     margin-bottom: 1.5rem;
     font-size: 1.05rem;
+    font-family: 'Lora', serif;
 }
 
 .hive-metrics {
@@ -820,6 +821,7 @@
     font-size: 0.9rem;
     line-height: 1.6;
     margin: 0;
+    font-family: 'Lora', serif;
 }
 
 .role-card-compact {
@@ -850,6 +852,7 @@
     font-size: 0.9rem;
     line-height: 1.6;
     margin: 0;
+    font-family: 'Lora', serif;
 }
 
 /* Leadership Section */
@@ -1133,6 +1136,7 @@
     color: var(--text-secondary);
     line-height: 1.8;
     font-size: 1.05rem;
+    font-family: 'Lora', serif;
 }
 
 .highlights-grid {
@@ -1199,6 +1203,7 @@
     line-height: 1.8;
     margin-bottom: 1rem;
     font-size: 1.05rem;
+    font-family: 'Lora', serif;
 }
 
 .about-contact {
