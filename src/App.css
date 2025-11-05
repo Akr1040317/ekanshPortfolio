@@ -307,7 +307,7 @@
 .hive-photo-grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
     gap: 1rem 1rem;
     row-gap: 0.75rem;
     height: 100%;
@@ -339,7 +339,7 @@
 
 .hive-photo-item.portrait {
     grid-column: 1;
-    grid-row: 2;
+    grid-row: 2 / span 2;
 }
 
 .hive-photo-item.landscape:last-of-type {
@@ -375,7 +375,7 @@
     object-fit: contain;
     display: block;
     border-radius: 16px;
-    background: var(--dark-secondary);
+    background: transparent;
 }
 
 .hive-intro h3 {
