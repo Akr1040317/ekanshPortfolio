@@ -9,7 +9,7 @@ const Hero = () => {
           <span className="gradient-text">Ekansh Rastogi</span>
         </h1>
         <p className="hero-tagline">Scripps National Spelling Bee Finalist · Co-Founder, Hive Education LLC · IB Diploma Student</p>
-        <p className="hero-subtitle">Engineering • Entrepreneurship • Education Technology</p>
+        <p className="hero-subtitle">Business • Entrepreneurship • EdTech</p>
         <div className="hive-links">
           <a href={resumePdf} className="cta-button primary" download>
             Download Resume
