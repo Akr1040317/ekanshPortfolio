@@ -86,8 +86,8 @@ const Hive = () => {
                   <h4>Current Status</h4>
                   <ul className="hive-list">
                     <li>500+ active users on platform</li>
-                    <li>Official learning partner for UAE Spelling Bee (2,000+ annual participants)</li>
-                    <li>50% free-to-paid conversion rate</li>
+                    <li>Launched platform for The Spelling Bee Championship UAE (<a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer">Hive PrepCenter</a>); negotiated agreements; hosted webinar with hundreds of parents/students (<a href="https://bit.ly/3X6b4hW" target="_blank" rel="noopener noreferrer">Link</a>). 200 users within a week; 1800+ projected by early 2026; 50% free-to-paid conversion.</li>
+                    <li>Inspired by UAE success, launching similar product for US classrooms. Pending evaluation as recommended resource in my district.</li>
                     <li>Piloted at Goldsboro Elementary and Sanford Middle</li>
                     <li>Pending evaluation in Seminole County Public Schools (40,000 students, 50+ schools)</li>
                   </ul>
@@ -97,6 +97,13 @@ const Hive = () => {
                   <h4>Role & Impact</h4>
                   <p>Leads marketing, content creation, and customer acquisition. Manages interns and builds relationships with educators and administrators globally.</p>
                   <p>Featured on cover of Stroll Heathrow for combining cricket and spelling passions.</p>
+                  <p><strong>Links:</strong></p>
+                  <ul className="hive-list">
+                    <li><a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> | <a href="https://bit.ly/HiveSpellingApp" target="_blank" rel="noopener noreferrer">Hive App</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">Hive PrepCenter Promo</a></li>
+                    <li><a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">Feature in National Spelling Bee Magazine: Combining Cricket & Spelling Passion</a></li>
+                    <li><a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">Media Recognition - Spelling Bee Blog</a> | <a href="https://www.fox35orlando.com/video/1079586" target="_blank" rel="noopener noreferrer">Fox 35 Orlando</a></li>
+                  </ul>
                 </div>
 
                 <div className="detail-card">

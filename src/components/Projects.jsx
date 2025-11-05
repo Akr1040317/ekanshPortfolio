@@ -33,6 +33,13 @@ const Projects = () => {
       icon: '📖',
       placeholder: 'Writing Project',
       years: 'In Progress'
+    },
+    {
+      title: 'Economics Research (Internal Assessments)',
+      description: '1. Microeconomics: Federal tax credits\' effects on addressing positive consumption externalities in EV market. 2. Macroeconomics: Impact of dockworker strikes on U.S. economic output. 3. International Economics: Impact of tariffs and retaliatory action on global trade/interdependence.',
+      icon: '📊',
+      placeholder: 'Research Project',
+      years: 'IB Diploma'
     }
   ];
 

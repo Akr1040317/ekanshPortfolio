@@ -5,10 +5,14 @@ import ScrollAnimation from './ScrollAnimation';
 const About = () => {
   const highlights = [
     { icon: '🏆', title: '5th Place', desc: 'Scripps National Spelling Bee (2022)', subtext: 'Out of 10M+ participants' },
-    { icon: '🎓', title: 'Perfect ACT', desc: '36 Composite Score', subtext: 'All sections: 36' },
     { icon: '🏏', title: 'International Champion', desc: 'Sir Garfield Sobers U19 (2025)', subtext: 'Historic first American victory' },
     { icon: '🎤', title: 'National Qualifier', desc: 'NSDA & NCFL Speech & Debate', subtext: 'Co-Captain, tripled membership' },
     { icon: '💼', title: 'Co-Founder', desc: 'Hive Education LLC', subtext: '500+ users, UAE official platform' }
+  ];
+
+  const certifications = [
+    { name: 'Entrepreneurship and Small Business' },
+    { name: 'Information Technology Specialist - Java' }
   ];
 
 
@@ -52,6 +56,15 @@ const About = () => {
                 ))}
               </div>
 
+
+              <div className="certifications-section">
+                <h3>Career/Industry Certifications</h3>
+                <ul className="certifications-list">
+                  {certifications.map((cert, index) => (
+                    <li key={index}>{cert.name}</li>
+                  ))}
+                </ul>
+              </div>
 
               <div className="about-vision">
                 <h3>Looking Forward</h3>
