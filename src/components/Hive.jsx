@@ -38,9 +38,6 @@ const Hive = () => {
                 <a href="https://www.hivespelling.com/" target="_blank" rel="noopener noreferrer" className="cta-button primary">
                   Visit Hive →
                 </a>
-                <a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer" className="cta-button secondary">
-                  Official Platform →
-                </a>
               </div>
             </div>
           </ScrollAnimation>
@@ -106,28 +103,40 @@ const Hive = () => {
 
             <ScrollAnimation>
               <div className="hive-image-gallery">
-                <div className="hive-gallery-item">
+                <div className="hive-gallery-item large">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 1</p>
                   </div>
                 </div>
-                <div className="hive-gallery-item">
+                <div className="hive-gallery-item small">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 2</p>
                   </div>
                 </div>
-                <div className="hive-gallery-item">
+                <div className="hive-gallery-item small">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 3</p>
                   </div>
                 </div>
-                <div className="hive-gallery-item">
+                <div className="hive-gallery-item medium">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 4</p>
+                  </div>
+                </div>
+                <div className="hive-gallery-item medium">
+                  <div className="image-placeholder">
+                    <span>📷</span>
+                    <p>Hive Image 5</p>
+                  </div>
+                </div>
+                <div className="hive-gallery-item small">
+                  <div className="image-placeholder">
+                    <span>📷</span>
+                    <p>Hive Image 6</p>
                   </div>
                 </div>
               </div>
