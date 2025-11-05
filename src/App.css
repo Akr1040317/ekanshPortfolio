@@ -691,11 +691,25 @@
 
 .cricket-roles-section-with-image {
     grid-template-columns: 1fr 400px;
+    align-items: start;
+}
+
+.cricket-roles-section-with-image .container {
+    width: 100%;
+}
+
+.cricket-roles-section-with-image .role-cards-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .cricket-image-single {
     width: 100%;
     max-width: 500px;
+    position: sticky;
+    top: 2rem;
 }
 
 .cricket-image-single .image-placeholder {
