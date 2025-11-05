@@ -23,6 +23,13 @@ const Projects = () => {
       icon: '📚',
       placeholder: 'Teaching Project',
       years: '2022 - 2025'
+    },
+    {
+      title: 'Spellbound: A Parent\'s Guide to Raising Young Spellers',
+      description: 'Currently writing a comprehensive guide for parents on raising young spellers, based on years of competition experience and coaching insights.',
+      icon: '📖',
+      placeholder: 'Writing Project',
+      years: 'In Progress'
     }
   ];
 

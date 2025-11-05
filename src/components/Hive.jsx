@@ -95,15 +95,13 @@ const Hive = () => {
 
                 <div className="detail-card">
                   <h4>Role & Impact</h4>
-                  <p>Leads marketing, content creation, and customer acquisition. Manages interns and negotiates partnerships with 750+ educators and administrators globally.</p>
-                  <p>Featured on cover of Stroll Heathrow and in National Spelling Bee Magazine for combining cricket and spelling passions.</p>
-                  <p className="featured-note">Currently writing "Spellbound: A Parent's Guide to Raising Young Spellers"</p>
+                  <p>Leads marketing, content creation, and customer acquisition. Manages interns and builds relationships with educators and administrators globally.</p>
+                  <p>Featured on cover of Stroll Heathrow for combining cricket and spelling passions.</p>
                 </div>
 
                 <div className="detail-card">
                   <h4>The Innovation</h4>
                   <p>While others memorized thousands of words daily, the pattern-based approach focuses on patterns, rules, and linguistic roots. This unconventional method became a scalable platform helping students learn spelling more effectively than rote memorization.</p>
-                  <p>What started as a different way to study became a proven method now used by thousands.</p>
                 </div>
               </div>
             </ScrollAnimation>
