@@ -307,7 +307,7 @@
 .hive-photo-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 1rem;
     height: 100%;
     min-height: 500px;
@@ -325,22 +325,25 @@
     box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
 }
 
-.hive-photo-item.large {
+.hive-photo-item.logo-square {
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 1;
+    min-height: 200px;
+}
+
+.hive-photo-item.landscape {
     grid-column: span 2;
-    grid-row: span 2;
-    min-height: 280px;
+    grid-row: span 1;
+    aspect-ratio: 16/9;
+    min-height: 180px;
 }
 
-.hive-photo-item.medium {
-    grid-column: span 1;
-    grid-row: span 2;
-    min-height: 240px;
-}
-
-.hive-photo-item.small {
+.hive-photo-item.portrait {
     grid-column: span 1;
     grid-row: span 1;
-    min-height: 180px;
+    aspect-ratio: 3/4;
+    min-height: 200px;
 }
 
 .hive-photo-item .image-placeholder {
@@ -1611,22 +1614,25 @@
         min-height: auto;
     }
 
-    .hive-photo-item.large {
+    .hive-photo-item.logo-square {
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 1;
+        min-height: 150px;
+    }
+
+    .hive-photo-item.landscape {
         grid-column: span 2;
         grid-row: span 1;
-        min-height: 200px;
-    }
-
-    .hive-photo-item.medium {
-        grid-column: span 1;
-        grid-row: span 1;
-        min-height: 180px;
-    }
-
-    .hive-photo-item.small {
-        grid-column: span 1;
-        grid-row: span 1;
+        aspect-ratio: 16/9;
         min-height: 150px;
+    }
+
+    .hive-photo-item.portrait {
+        grid-column: span 1;
+        grid-row: span 1;
+        aspect-ratio: 3/4;
+        min-height: 180px;
     }
 
     .hive-info-grid {

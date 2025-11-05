@@ -26,34 +26,28 @@ const Hive = () => {
         <div className="hive-hero">
           <ScrollAnimation>
             <div className="hive-photo-grid">
-              <div className="hive-photo-item large">
+              <div className="hive-photo-item logo-square">
+                <div className="image-placeholder">
+                  <span>🐝</span>
+                  <p>Hive Logo</p>
+                </div>
+              </div>
+              <div className="hive-photo-item landscape">
                 <div className="image-placeholder">
                   <span>📷</span>
                   <p>Hive Photo 1</p>
                 </div>
               </div>
-              <div className="hive-photo-item medium">
+              <div className="hive-photo-item portrait">
                 <div className="image-placeholder">
                   <span>📷</span>
                   <p>Hive Photo 2</p>
                 </div>
               </div>
-              <div className="hive-photo-item small">
+              <div className="hive-photo-item landscape">
                 <div className="image-placeholder">
                   <span>📷</span>
                   <p>Hive Photo 3</p>
-                </div>
-              </div>
-              <div className="hive-photo-item medium">
-                <div className="image-placeholder">
-                  <span>📷</span>
-                  <p>Hive Photo 4</p>
-                </div>
-              </div>
-              <div className="hive-photo-item small">
-                <div className="image-placeholder">
-                  <span>📷</span>
-                  <p>Hive Photo 5</p>
                 </div>
               </div>
             </div>
