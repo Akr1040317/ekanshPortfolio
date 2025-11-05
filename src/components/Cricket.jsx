@@ -11,10 +11,10 @@ const Cricket = () => {
   ];
 
   const stats = [
-    { number: '158', label: 'Career Matches' },
-    { number: '148', label: 'Wickets' },
-    { number: '938', label: 'Runs' },
-    { number: '70', label: 'FCC Matches' }
+    { number: '159', label: 'Career Matches' },
+    { number: '150', label: 'Wickets' },
+    { number: '947', label: 'Runs' },
+    { number: '71', label: 'FCC Matches' }
   ];
 
   const leadershipMoments = [
