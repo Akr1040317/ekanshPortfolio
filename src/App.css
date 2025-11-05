@@ -296,8 +296,8 @@
 /* Hive Section - Fixed overlay */
 .hive-hero {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
     align-items: center;
     margin-bottom: 3rem;
     position: relative;
@@ -306,7 +306,7 @@
 
 .hive-photo-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
@@ -326,6 +326,12 @@
 .hive-photo-item.app-icon {
     width: 280px;
     height: 280px;
+    flex-shrink: 0;
+}
+
+.hive-intro {
+    width: 100%;
+    max-width: none;
 }
 
 .hive-photo-item .image-placeholder {
