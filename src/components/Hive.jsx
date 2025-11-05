@@ -41,7 +41,7 @@ const Hive = () => {
                   Visit Hive →
                 </a>
                 <a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer" className="cta-button prepcenter">
-                  <span className="prepcenter-title">Hive PrepCenter</span>
+                  <span className="prepcenter-title">Visit Hive PrepCenter →</span>
                   <span className="prepcenter-subtitle">built for UAE Spelling Bee Championship</span>
                 </a>
               </div>
