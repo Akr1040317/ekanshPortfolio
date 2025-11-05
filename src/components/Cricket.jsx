@@ -19,18 +19,18 @@ const Cricket = () => {
 
   const leadershipMoments = [
     {
-      title: 'Leading Strangers to Victory',
-      desc: 'Captained a team of players from different cities—Jayden from Guyana, Aarav from Denver, Sachin from New York. Transformed strangers into champions through collaboration and delegation.',
-      highlight: '2025 Barbados Tournament'
+      title: 'Historic Victory as Captain',
+      desc: 'Led US-based team as captain to first-ever American victory at the 2025 Sir Garfield Sobers International Under-19 Cricket Tournament. Effectively led a team of strangers through team-building exercises and collaborative strategy.',
+      highlight: '2025 Sir Garfield Sobers Tournament'
     },
     {
       title: 'Fostering Team Culture',
-      desc: 'After an early loss, organized team dinners that became learning sessions. Created space for each player to share insights—batting tips from the Caribbean, strategies from Texas, observations from all corners.',
+      desc: 'After an early loss, rebuilt culture by organizing team dinners and creating spaces for each player to share insights from personal experience, voice concerns over game strategy, and provide suggestions from their perspective.',
       highlight: 'Collaborative Leadership'
     },
     {
       title: 'Strategic Delegation',
-      desc: 'Empowered teammates by delegating key responsibilities: Shiloh maintained accountability, Ajay refined batting strategies, Dave led spin bowlers. Each game produced an unlikely hero.',
+      desc: 'Emphasized collaboration over control in leadership style by delegating key responsibilities to certain players. Empowered teammates to employ their area-specific expertise and make decisions.',
       highlight: 'Team Empowerment'
     }
   ];
@@ -148,15 +148,15 @@ const Cricket = () => {
               <div className="role-cards-grid">
                 <div className="role-card-compact">
                   <h4>NY Tri-State Development Captain</h4>
-                  <p>Coordinate tournament logistics, flight plans, uniform design, and team management for international competitions. Training under Colin Croft, all-time great fast bowler.</p>
+                  <p>Coordinate tournament logistics, flight plans, uniform design, and team management for international tournaments. Handle on- and off-field matters, resolve conflicts, make crucial strategic decisions, and coordinate between players, coaching staff, and management group.</p>
                 </div>
                 <div className="role-card-compact">
-                  <h4>6-Year Founding Member</h4>
-                  <p>Florida Panthers Youth Cricket Academy - Grew academy from 5 to 30+ members through community outreach, coaching demos, and innovative marketing.</p>
+                  <h4>6-Year Founding Member, Florida Panthers Youth Cricket Academy (FPYCA)</h4>
+                  <p>Grew academy to 30+ members through community outreach, coaching clinics, and grassroots campaigns at community events. Designed marketing materials such as flyers, pamphlets, and posters and placed them at community hotspots to drive academy enrollment.</p>
                 </div>
                 <div className="role-card-compact">
-                  <h4>Volunteer & Ambassador</h4>
-                  <p>Support grassroots women's cricket through live commentary, streaming, match scoring, and tournament organization at American Women Cricket Club.</p>
+                  <h4>FPYCA, American Women Cricket Club (AWCC)</h4>
+                  <p>Support grassroots women's cricket through tournament organization, live commentary, streaming, match scoring at AWCC-affiliated tournaments.</p>
                 </div>
               </div>
               <div className="cricket-links">
