@@ -37,10 +37,10 @@ const Hive = () => {
                 <img src={dashboard} alt="Hive Dashboard" className="hive-grid-image" />
               </div>
               <div className="hive-photo-item portrait">
-                <img src={appImage} alt="Hive App" className="hive-grid-image" />
+                <img src={uaeSpelling} alt="UAE Spelling Bee" className="hive-grid-image" />
               </div>
               <div className="hive-photo-item landscape">
-                <img src={uaeSpelling} alt="UAE Spelling Bee" className="hive-grid-image" />
+                <img src={appImage} alt="Hive App" className="hive-grid-image" />
               </div>
             </div>
           </ScrollAnimation>
