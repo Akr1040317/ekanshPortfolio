@@ -9,7 +9,7 @@ const Interests = () => {
         {
           title: 'Model United Nations',
           icon: '🌍',
-          description: '3-year competitor at Seminole High School. Selected to represent school at PrincetonMUNC (chosen from 128 delegates) and GatorMUN (hosted by UF). Achieved Outstanding Delegate at PrincetonMUNC and SeminoleMUN. I mentor newer members and love the diplomacy, research, and problem-solving that MUN demands.',
+          description: '3-year competitor at Seminole High School. Selected to represent school at the upcoming PrincetonMUNC (chosen from 128 delegates) and GatorMUN (hosted by UF). Achieved Outstanding Delegate at SeminoleMUN. I mentor newer members and love the diplomacy, research, and problem-solving that MUN demands.',
           image: 'MUN Image'
         },
         {
