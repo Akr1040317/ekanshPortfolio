@@ -25,9 +25,37 @@ const Hive = () => {
         
         <div className="hive-hero">
           <ScrollAnimation>
-            <div className="hive-main-image">
-              <span>🐝</span>
-              <p>Hive Main Image</p>
+            <div className="hive-photo-grid">
+              <div className="hive-photo-item large">
+                <div className="image-placeholder">
+                  <span>📷</span>
+                  <p>Hive Photo 1</p>
+                </div>
+              </div>
+              <div className="hive-photo-item medium">
+                <div className="image-placeholder">
+                  <span>📷</span>
+                  <p>Hive Photo 2</p>
+                </div>
+              </div>
+              <div className="hive-photo-item small">
+                <div className="image-placeholder">
+                  <span>📷</span>
+                  <p>Hive Photo 3</p>
+                </div>
+              </div>
+              <div className="hive-photo-item medium">
+                <div className="image-placeholder">
+                  <span>📷</span>
+                  <p>Hive Photo 4</p>
+                </div>
+              </div>
+              <div className="hive-photo-item small">
+                <div className="image-placeholder">
+                  <span>📷</span>
+                  <p>Hive Photo 5</p>
+                </div>
+              </div>
             </div>
           </ScrollAnimation>
           <ScrollAnimation>
@@ -103,40 +131,28 @@ const Hive = () => {
 
             <ScrollAnimation>
               <div className="hive-image-gallery">
-                <div className="hive-gallery-item large">
+                <div className="hive-gallery-item">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 1</p>
                   </div>
                 </div>
-                <div className="hive-gallery-item small">
+                <div className="hive-gallery-item">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 2</p>
                   </div>
                 </div>
-                <div className="hive-gallery-item small">
+                <div className="hive-gallery-item">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 3</p>
                   </div>
                 </div>
-                <div className="hive-gallery-item medium">
+                <div className="hive-gallery-item">
                   <div className="image-placeholder">
                     <span>📷</span>
                     <p>Hive Image 4</p>
-                  </div>
-                </div>
-                <div className="hive-gallery-item medium">
-                  <div className="image-placeholder">
-                    <span>📷</span>
-                    <p>Hive Image 5</p>
-                  </div>
-                </div>
-                <div className="hive-gallery-item small">
-                  <div className="image-placeholder">
-                    <span>📷</span>
-                    <p>Hive Image 6</p>
                   </div>
                 </div>
               </div>
