@@ -37,8 +37,9 @@ const Hive = () => {
               <h3>EdTech Startup Co-Founder</h3>
               <p>Founded Hive, an EdTech startup and online learning platform teaching spelling through pattern-recognition. Designed curriculum containing quizzes and lessons based on patterns, spelling rules, and roots observations from 7+ years of spelling coaching and competition experience. Hoping to change the way spelling is taught and reducing dependence on memorization.</p>
               <div className="hive-links">
-                <a href="https://www.hivespelling.com/" target="_blank" rel="noopener noreferrer" className="cta-button primary">
-                  Visit Hive →
+                <a href="https://www.hivespelling.com/" target="_blank" rel="noopener noreferrer" className="cta-button primary prepcenter">
+                  <span className="prepcenter-title">Visit Hive →</span>
+                  <span className="prepcenter-subtitle">hivespelling.com</span>
                 </a>
                 <a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer" className="cta-button prepcenter">
                   <span className="prepcenter-title">Visit Hive PrepCenter →</span>
