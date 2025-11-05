@@ -30,16 +30,16 @@ const Hive = () => {
         <div className="hive-hero">
           <ScrollAnimation>
             <div className="hive-photo-grid">
-              <div className="hive-photo-item logo-square">
+              <div className="hive-photo-item app-icon">
                 <img src={appIcon} alt="Hive App Icon" className="hive-grid-image" />
               </div>
-              <div className="hive-photo-item landscape">
+              <div className="hive-photo-item desktop-screenshot">
                 <img src={dashboard} alt="Hive Dashboard" className="hive-grid-image" />
               </div>
-              <div className="hive-photo-item portrait">
+              <div className="hive-photo-item desktop-screenshot">
                 <img src={uaeSpelling} alt="UAE Spelling Bee" className="hive-grid-image" />
               </div>
-              <div className="hive-photo-item landscape">
+              <div className="hive-photo-item phone-app">
                 <img src={appImage} alt="Hive App" className="hive-grid-image" />
               </div>
             </div>

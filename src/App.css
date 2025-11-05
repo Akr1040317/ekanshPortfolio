@@ -306,13 +306,12 @@
 
 .hive-photo-grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    gap: 1rem 1rem;
-    row-gap: 0.75rem;
-    height: 100%;
-    min-height: 450px;
-    max-height: 600px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    align-items: start;
+    justify-items: start;
+    width: 100%;
 }
 
 .hive-photo-item {
@@ -327,24 +326,37 @@
     box-shadow: 0 12px 35px rgba(156, 39, 176, 0.35);
 }
 
-.hive-photo-item.logo-square {
+.hive-photo-item.app-icon {
     grid-column: 1;
     grid-row: 1;
+    width: 200px;
+    height: 200px;
 }
 
-.hive-photo-item.landscape:first-of-type {
-    grid-column: 2 / span 2;
+.hive-photo-item.desktop-screenshot:first-of-type {
+    grid-column: 2;
     grid-row: 1;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
 }
 
-.hive-photo-item.portrait {
-    grid-column: 1 / span 2;
+.hive-photo-item.desktop-screenshot:last-of-type {
+    grid-column: 2;
     grid-row: 2;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    min-height: 300px;
 }
 
-.hive-photo-item.landscape:last-of-type {
-    grid-column: 3;
+.hive-photo-item.phone-app {
+    grid-column: 1;
     grid-row: 2;
+    width: 200px;
+    height: auto;
+    max-height: 500px;
 }
 
 .hive-photo-item .image-placeholder {
@@ -1622,25 +1634,39 @@
     }
 
     .hive-photo-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
-        min-height: auto;
-        max-height: none;
+        gap: 1.5rem;
     }
 
-    .hive-photo-item.logo-square {
-        aspect-ratio: 1;
-        min-height: 150px;
+    .hive-photo-item.app-icon {
+        width: 150px;
+        height: 150px;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
     }
 
-    .hive-photo-item.landscape {
-        aspect-ratio: 16/9;
-        min-height: 150px;
+    .hive-photo-item.desktop-screenshot:first-of-type {
+        grid-column: 1;
+        grid-row: 2;
+        max-width: 100%;
+        min-height: 200px;
     }
 
-    .hive-photo-item.portrait {
-        aspect-ratio: 3/4;
-        min-height: 180px;
+    .hive-photo-item.desktop-screenshot:last-of-type {
+        grid-column: 1;
+        grid-row: 3;
+        max-width: 100%;
+        min-height: 200px;
+    }
+
+    .hive-photo-item.phone-app {
+        grid-column: 1;
+        grid-row: 4;
+        width: 150px;
+        max-height: 400px;
+        justify-self: center;
     }
 
     .hive-info-grid {
