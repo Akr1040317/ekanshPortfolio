@@ -7,21 +7,10 @@ const About = () => {
     { icon: '🏆', title: '5th Place', desc: 'Scripps National Spelling Bee (2022)', subtext: 'Out of 10M+ participants' },
     { icon: '🎓', title: 'Perfect ACT', desc: '36 Composite Score', subtext: 'All sections: 36' },
     { icon: '🏏', title: 'International Champion', desc: 'Sir Garfield Sobers U19 (2025)', subtext: 'Historic first American victory' },
-    { icon: '📊', title: 'Academic Excellence', desc: 'Rank 13/888, GPA 4.735', subtext: 'Weighted GPA' },
     { icon: '🎤', title: 'National Qualifier', desc: 'NSDA & NCFL Speech & Debate', subtext: 'Co-Captain, tripled membership' },
     { icon: '💼', title: 'Co-Founder', desc: 'Hive Education LLC', subtext: '500+ users, UAE official platform' }
   ];
 
-  const apScores = [
-    { subject: 'Computer Science A', score: '5' },
-    { subject: 'English Language', score: '5' },
-    { subject: 'Physics 1', score: '5' },
-    { subject: 'World History', score: '5' },
-    { subject: 'Calculus BC', score: '5' },
-    { subject: 'Statistics', score: '5' },
-    { subject: 'Physics 2', score: '5' },
-    { subject: 'English Literature', score: '5' }
-  ];
 
   return (
     <section id="about" className="section">
@@ -63,37 +52,6 @@ const About = () => {
                 ))}
               </div>
 
-              <div className="testing-section">
-                <h3>Testing & Academics</h3>
-                <div className="testing-grid">
-                  <div className="test-card major">
-                    <div className="test-score">36</div>
-                    <div className="test-label">ACT Composite</div>
-                    <div className="test-breakdown">Math 36 • Science 36 • English 36 • Reading 36</div>
-                  </div>
-                  <div className="test-card">
-                    <div className="test-score">1520</div>
-                    <div className="test-label">PSAT</div>
-                    <div className="test-breakdown">National Merit Semifinalist</div>
-                  </div>
-                  <div className="test-card">
-                    <div className="test-score">8</div>
-                    <div className="test-label">AP Exams</div>
-                    <div className="test-breakdown">All scores: 5</div>
-                  </div>
-                </div>
-                <div className="ap-scores">
-                  <h4>AP Scores (All 5s)</h4>
-                  <div className="ap-grid">
-                    {apScores.map((ap, index) => (
-                      <div key={index} className="ap-item">
-                        <span className="ap-subject">{ap.subject}</span>
-                        <span className="ap-score">{ap.score}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
 
               <div className="about-vision">
                 <h3>Looking Forward</h3>
@@ -102,7 +60,7 @@ const About = () => {
               </div>
 
               <div className="about-contact">
-                <a href="mailto:ekanshrastogi08@outlook.com" className="cta-button">
+                <a href="mailto:erastogi@hivespelling.com" className="cta-button">
                   Get in Touch →
                 </a>
               </div>
