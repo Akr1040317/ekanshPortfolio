@@ -666,18 +666,65 @@
 }
 
 /* Cricket Section */
-.cricket-content {
-    margin-bottom: 3rem;
+.cricket-stats-section-with-image,
+.cricket-achievements-section-with-image,
+.cricket-leadership-section-with-image,
+.cricket-roles-section-with-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.cricket-stats-section-with-image {
+    grid-template-columns: 300px 1fr;
+}
+
+.cricket-achievements-section-with-image {
+    grid-template-columns: 1fr 400px;
+}
+
+.cricket-leadership-section-with-image {
+    grid-template-columns: 300px 1fr;
+}
+
+.cricket-roles-section-with-image {
+    grid-template-columns: 1fr 400px;
+}
+
+.cricket-image-single {
+    width: 100%;
+    max-width: 500px;
+}
+
+.cricket-image-single .image-placeholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/4;
+}
+
+.cricket-image-single .image-placeholder.landscape {
+    aspect-ratio: 4/3;
+}
+
+.cricket-image-single .image-placeholder.video-placeholder {
+    aspect-ratio: 16/9;
+}
+
+.cricket-video-section {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cricket-video-section .cricket-image-single {
+    max-width: 800px;
+    width: 100%;
 }
 
 .cricket-stats-section {
-    margin-top: 2rem;
-}
-
-.cricket-image-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    margin-top: 0;
 }
 
 .gallery-item {
@@ -1620,6 +1667,19 @@
 
     .hive-links {
         justify-content: center;
+    }
+
+    .cricket-stats-section-with-image,
+    .cricket-achievements-section-with-image,
+    .cricket-leadership-section-with-image,
+    .cricket-roles-section-with-image {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .cricket-image-single {
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .hero-image-container {

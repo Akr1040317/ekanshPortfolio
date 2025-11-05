@@ -42,50 +42,15 @@ const Cricket = () => {
           <h2 className="section-title">Cricket</h2>
         </ScrollAnimation>
         
-        <div className="cricket-content">
-          <div className="cricket-image-gallery">
-            <ScrollAnimation>
-              <div className="gallery-item">
-                <div className="image-placeholder portrait">
-                  <span>📷</span>
-                  <p>Cricket Portrait Image 1</p>
-                </div>
+        <div className="cricket-stats-section-with-image">
+          <ScrollAnimation>
+            <div className="cricket-image-single">
+              <div className="image-placeholder portrait">
+                <span>📷</span>
+                <p>Cricket Portrait Image 1</p>
               </div>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <div className="gallery-item">
-                <div className="image-placeholder portrait">
-                  <span>📷</span>
-                  <p>Cricket Portrait Image 2</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <div className="gallery-item">
-                <div className="image-placeholder landscape">
-                  <span>📷</span>
-                  <p>Cricket Landscape Image 1</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <div className="gallery-item">
-                <div className="image-placeholder landscape">
-                  <span>📷</span>
-                  <p>Cricket Landscape Image 2</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <div className="gallery-item video-gallery-item">
-                <div className="image-placeholder video-placeholder">
-                  <span>🎥</span>
-                  <p>Cricket Video</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-          </div>
-          
+            </div>
+          </ScrollAnimation>
           <ScrollAnimation>
             <div className="cricket-stats-section">
               <div className="cricket-stats-grid">
@@ -100,7 +65,7 @@ const Cricket = () => {
           </ScrollAnimation>
         </div>
 
-        <div className="cricket-achievements-section">
+        <div className="cricket-achievements-section-with-image">
           <ScrollAnimation>
             <div className="container">
               <h3 className="subsection-title">Key Achievements</h3>
@@ -120,9 +85,25 @@ const Cricket = () => {
               </div>
             </div>
           </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="cricket-image-single">
+              <div className="image-placeholder landscape">
+                <span>📷</span>
+                <p>Cricket Landscape Image 1</p>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
 
-        <div className="cricket-leadership-section">
+        <div className="cricket-leadership-section-with-image">
+          <ScrollAnimation>
+            <div className="cricket-image-single">
+              <div className="image-placeholder portrait">
+                <span>📷</span>
+                <p>Cricket Portrait Image 2</p>
+              </div>
+            </div>
+          </ScrollAnimation>
           <ScrollAnimation>
             <div className="container">
               <h3 className="subsection-title">Leadership Moments</h3>
@@ -141,7 +122,7 @@ const Cricket = () => {
           </ScrollAnimation>
         </div>
 
-        <div className="cricket-roles-section">
+        <div className="cricket-roles-section-with-image">
           <ScrollAnimation>
             <div className="container">
               <h3 className="subsection-title">Current Roles</h3>
@@ -166,7 +147,26 @@ const Cricket = () => {
               </div>
             </div>
           </ScrollAnimation>
+          <ScrollAnimation>
+            <div className="cricket-image-single">
+              <div className="image-placeholder landscape">
+                <span>📷</span>
+                <p>Cricket Landscape Image 2</p>
+              </div>
+            </div>
+          </ScrollAnimation>
         </div>
+
+        <ScrollAnimation>
+          <div className="cricket-video-section">
+            <div className="cricket-image-single video-section">
+              <div className="image-placeholder video-placeholder">
+                <span>🎥</span>
+                <p>Cricket Video</p>
+              </div>
+            </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );
