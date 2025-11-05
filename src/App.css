@@ -330,25 +330,21 @@
 .hive-photo-item.logo-square {
     grid-column: 1;
     grid-row: 1;
-    aspect-ratio: 1;
 }
 
 .hive-photo-item.landscape {
     grid-column: 2;
     grid-row: span 1;
-    aspect-ratio: 16/9;
 }
 
 .hive-photo-item.portrait {
     grid-column: 1;
     grid-row: 2;
-    aspect-ratio: 3/4;
 }
 
 .hive-photo-item.landscape:last-of-type {
     grid-column: 2;
     grid-row: 2;
-    aspect-ratio: 16/9;
 }
 
 .hive-photo-item .image-placeholder {
@@ -376,9 +372,10 @@
 .hive-grid-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     border-radius: 16px;
+    background: var(--dark-secondary);
 }
 
 .hive-intro h3 {
