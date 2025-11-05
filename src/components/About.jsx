@@ -71,12 +71,6 @@ const About = () => {
                 <p>I'm excited about merging engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
                 <p>My goal is to create platforms that help others discover their potential, whether through innovative learning methods, leadership opportunities, or community-building initiatives.</p>
               </div>
-
-              <div className="about-contact">
-                <a href="mailto:erastogi@hivespelling.com" className="cta-button">
-                  Get in Touch →
-                </a>
-              </div>
             </div>
           </ScrollAnimation>
           <ScrollAnimation>
