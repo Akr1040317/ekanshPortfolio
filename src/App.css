@@ -308,42 +308,43 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.25rem;
     height: 100%;
     min-height: 500px;
+    align-items: stretch;
 }
 
 .hive-photo-item {
     overflow: hidden;
-    border-radius: 15px;
+    border-radius: 18px;
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hive-photo-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(156, 39, 176, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(156, 39, 176, 0.4);
 }
 
 .hive-photo-item.logo-square {
     grid-column: 1;
     grid-row: 1;
     aspect-ratio: 1;
-    min-height: 200px;
+    min-height: 220px;
 }
 
 .hive-photo-item.landscape {
     grid-column: span 2;
     grid-row: span 1;
     aspect-ratio: 16/9;
-    min-height: 180px;
+    min-height: 200px;
 }
 
 .hive-photo-item.portrait {
     grid-column: span 1;
     grid-row: span 1;
     aspect-ratio: 3/4;
-    min-height: 200px;
+    min-height: 220px;
 }
 
 .hive-photo-item .image-placeholder {
@@ -351,18 +352,25 @@
     height: 100%;
     min-height: 100%;
     background: var(--gradient-1);
-    border-radius: 15px;
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+    gap: 0.75rem;
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hive-photo-item .image-placeholder:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(156, 39, 176, 0.3);
+}
+
+.hive-photo-item.logo-square .image-placeholder {
+    background: var(--gradient-3);
 }
 
 .hive-intro h3 {
