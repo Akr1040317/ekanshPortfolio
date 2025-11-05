@@ -63,7 +63,7 @@ const Cricket = () => {
                 ))}
               </div>
               <div className="cricket-links">
-                <a href="https://bit.ly/CricketStats" target="_blank" rel="noopener noreferrer" className="cta-button">
+                <a href="https://cricclubs.com/FloridaCricketConference/viewPlayer.do?playerId=4376944&clubId=5413" target="_blank" rel="noopener noreferrer" className="cta-button">
                   View Cricket Stats →
                 </a>
               </div>
