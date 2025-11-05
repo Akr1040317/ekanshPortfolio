@@ -1,9 +1,6 @@
 import React from 'react';
 import ScrollAnimation from './ScrollAnimation';
 import appIcon from '../assets/app-icon-DliWh03c.jpg';
-import dashboard from '../assets/dashboard.png';
-import uaeSpelling from '../assets/UAESpelling.png';
-import appImage from '../assets/app.png';
 
 const Hive = () => {
   const metrics = [
@@ -29,18 +26,9 @@ const Hive = () => {
         
         <div className="hive-hero">
           <ScrollAnimation>
-            <div className="hive-photo-grid">
+            <div className="hive-photo-container">
               <div className="hive-photo-item app-icon">
                 <img src={appIcon} alt="Hive App Icon" className="hive-grid-image" />
-              </div>
-              <div className="hive-photo-item desktop-screenshot">
-                <img src={dashboard} alt="Hive Dashboard" className="hive-grid-image" />
-              </div>
-              <div className="hive-photo-item desktop-screenshot">
-                <img src={uaeSpelling} alt="UAE Spelling Bee" className="hive-grid-image" />
-              </div>
-              <div className="hive-photo-item phone-app">
-                <img src={appImage} alt="Hive App" className="hive-grid-image" />
               </div>
             </div>
           </ScrollAnimation>
