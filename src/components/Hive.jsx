@@ -7,12 +7,12 @@ const Hive = () => {
     { number: '500+', label: 'Active Users' },
     { number: '50%', label: 'Conversion Rate' },
     { number: '2,000+', label: 'Annual Participants' },
-    { number: '500+', label: 'Educators Reached' }
+    { number: '750+', label: 'Educators Reached' }
   ];
 
   const milestones = [
-    { title: '5th Place National Spelling Bee', desc: 'Used pattern-based approach that inspired Hive', year: '2022' },
-    { title: 'Research & Curriculum Design', desc: 'Spent year researching and designing curriculum based on pattern-recognition approach', year: '2023' },
+    { title: '5th Place National Spelling Bee', desc: 'Pattern-based approach that inspired Hive', year: '2022' },
+    { title: 'Research & Curriculum Design', desc: 'Year researching and designing curriculum based on pattern-recognition approach', year: '2023' },
     { title: 'iOS Beta Release', desc: 'Launched iOS beta version of the platform', year: '2024' },
     { title: 'UAE Partnership', desc: 'Became official learning platform for UAE National Spelling Bee', year: '2025' }
   ];
@@ -35,10 +35,14 @@ const Hive = () => {
           <ScrollAnimation>
             <div className="hive-intro">
               <h3>EdTech Startup Co-Founder</h3>
-              <p>Built an online learning platform teaching spelling through pattern-recognition—the same approach that took me to 5th place nationally out of 10 million participants.</p>
+              <p>Founded Hive, an EdTech startup and online learning platform teaching spelling through pattern-recognition. Designed curriculum containing quizzes and lessons based on patterns, spelling rules, and roots observations from 7+ years of spelling coaching and competition experience. Hoping to change the way spelling is taught and reducing dependence on memorization.</p>
               <div className="hive-links">
                 <a href="https://www.hivespelling.com/" target="_blank" rel="noopener noreferrer" className="cta-button primary">
                   Visit Hive →
+                </a>
+                <a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer" className="cta-button prepcenter">
+                  <span className="prepcenter-title">Hive PrepCenter</span>
+                  <span className="prepcenter-subtitle">built for UAE Spelling Bee Championship</span>
                 </a>
               </div>
             </div>
@@ -81,23 +85,23 @@ const Hive = () => {
                   <h4>Current Status</h4>
                   <ul className="hive-list">
                     <li>500+ active users on platform</li>
-                    <li>Official learning partner for UAE Spelling Bee (2,000+ participants)</li>
+                    <li>Official learning partner for UAE Spelling Bee (2,000+ annual participants)</li>
                     <li>50% free-to-paid conversion rate</li>
-                    <li>Launched at Goldsboro Elementary and Sanford Middle</li>
-                    <li>Pending evaluation in Seminole County Public Schools (40,000 students)</li>
+                    <li>Piloted at Goldsboro Elementary and Sanford Middle</li>
+                    <li>Pending evaluation in Seminole County Public Schools (40,000 students, 50+ schools)</li>
                   </ul>
                 </div>
 
                 <div className="detail-card">
-                  <h4>My Role & Impact</h4>
-                  <p>Lead marketing, content creation, and customer acquisition. Manage interns and negotiate partnerships with 500+ educators and administrators globally.</p>
+                  <h4>Role & Impact</h4>
+                  <p>Leads marketing, content creation, and customer acquisition. Manages interns and negotiates partnerships with 750+ educators and administrators globally.</p>
                   <p>Featured on cover of Stroll Heathrow and in National Spelling Bee Magazine for combining cricket and spelling passions.</p>
                   <p className="featured-note">Currently writing "Spellbound: A Parent's Guide to Raising Young Spellers"</p>
                 </div>
 
                 <div className="detail-card">
                   <h4>The Innovation</h4>
-                  <p>While others memorized thousands of words daily, I learned through patterns, rules, and linguistic roots. This unconventional approach became a scalable platform helping students learn spelling more effectively than rote memorization.</p>
+                  <p>While others memorized thousands of words daily, the pattern-based approach focuses on patterns, rules, and linguistic roots. This unconventional method became a scalable platform helping students learn spelling more effectively than rote memorization.</p>
                   <p>What started as a different way to study became a proven method now used by thousands.</p>
                 </div>
               </div>
