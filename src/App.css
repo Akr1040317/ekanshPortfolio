@@ -739,6 +739,18 @@
 
 .cricket-stats-section {
     margin-top: 0;
+    width: 100%;
+}
+
+.cricket-stats-section .subsection-title {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.cricket-stats-section .cricket-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .gallery-item {
@@ -796,7 +808,7 @@
 .cricket-stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .stat-card {

@@ -53,6 +53,7 @@ const Cricket = () => {
           </ScrollAnimation>
           <ScrollAnimation>
             <div className="cricket-stats-section">
+              <h3 className="subsection-title">Statistics</h3>
               <div className="cricket-stats-grid">
                 {stats.map((stat, index) => (
                   <div key={index} className="stat-card">
@@ -60,6 +61,11 @@ const Cricket = () => {
                     <div className="stat-label">{stat.label}</div>
                   </div>
                 ))}
+              </div>
+              <div className="cricket-links">
+                <a href="https://bit.ly/CricketStats" target="_blank" rel="noopener noreferrer" className="cta-button">
+                  View Cricket Stats →
+                </a>
               </div>
             </div>
           </ScrollAnimation>
@@ -139,11 +145,6 @@ const Cricket = () => {
                   <h4>FPYCA, American Women Cricket Club (AWCC)</h4>
                   <p>Support grassroots women's cricket through tournament organization, live commentary, streaming, match scoring at AWCC-affiliated tournaments.</p>
                 </div>
-              </div>
-              <div className="cricket-links">
-                <a href="https://bit.ly/CricketStats" target="_blank" rel="noopener noreferrer" className="cta-button">
-                  View Cricket Stats →
-                </a>
               </div>
             </div>
           </ScrollAnimation>
