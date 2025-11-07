@@ -1909,10 +1909,13 @@ a:focus-visible {
 
     .hero-content {
         text-align: center;
+        justify-items: center;
     }
 
     .hive-links {
         justify-content: center;
+        grid-template-columns: minmax(0, 1fr);
+        justify-items: center;
     }
 
     .cricket-stats-section-with-image,
@@ -2096,6 +2099,10 @@ a:focus-visible {
 
     .hive-hero-visual {
         flex-direction: column;
+    }
+
+    .hive-links {
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .hive-overview-grid {
