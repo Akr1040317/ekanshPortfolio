@@ -26,7 +26,11 @@ const Hive = () => {
           Hive PrepCenter
         </a>
         ); negotiated agreements; hosted webinar with hundreds of parents/students (
-        <a href="https://bit.ly/3X6b4hW" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.youtube.com/live/GnXv8j7eoQI?si=z06pB_ltEXLPDkuI&amp;t=230"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Link
         </a>
         ). 200 users in week one; 1,800+ projected by early 2026; 50% free-to-paid conversion.
@@ -44,7 +48,7 @@ const Hive = () => {
     (
       <>
         <strong>Media & resources:</strong> <a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> ·{' '}
-        <a href="https://bit.ly/HiveSpellingApp" target="_blank" rel="noopener noreferrer">Hive App</a> ·{' '}
+        <a href="https://apps.apple.com/us/app/hive-spelling-bee-prep-app/id6479415050" target="_blank" rel="noopener noreferrer">Hive App</a> ·{' '}
         <a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">PrepCenter Promo</a> ·{' '}
         <a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">Scripps Magazine Feature</a> ·{' '}
         <a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">Spelling Bee Blog</a> ·{' '}
