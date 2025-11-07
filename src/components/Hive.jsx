@@ -87,11 +87,6 @@ const Hive = () => {
     { title: 'The Innovation', type: 'text', paragraphs: innovationParagraphs }
   ];
 
-  const mediaTiles = [
-    { icon: '🌍', title: 'UAE PrepCenter Rollout' },
-    { icon: '🏫', title: 'U.S. Classroom Pilot' }
-  ];
-
   return (
     <section id="hive" className="section hive-section">
       <div className="container">
