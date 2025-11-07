@@ -17,6 +17,58 @@ const Hive = () => {
     { title: 'UAE Partnership', desc: 'Became official learning platform for UAE National Spelling Bee', year: '2025' }
   ];
 
+  const statusItems = [
+    '500+ active users on platform',
+    (
+      <>
+        Launched platform for The Spelling Bee Championship UAE (
+        <a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer">
+          Hive PrepCenter
+        </a>
+        ); negotiated agreements; hosted webinar with hundreds of parents/students (
+        <a href="https://bit.ly/3X6b4hW" target="_blank" rel="noopener noreferrer">
+          Link
+        </a>
+        ). 200 users in week one; 1,800+ projected by early 2026; 50% free-to-paid conversion.
+      </>
+    ),
+    'Inspired by UAE success, launching similar product for US classrooms (district recommendation pending).',
+    'Piloted at Goldsboro Elementary and Sanford Middle.',
+    'Under evaluation in Seminole County Public Schools (40,000 students across 50+ schools).'
+  ];
+
+  const roleItems = [
+    'Lead marketing, content creation, and customer acquisition strategy.',
+    'Manage interns and coordinate with educators and administrators globally.',
+    'Featured on cover of Stroll Heathrow for bridging cricket and spelling passions.',
+    (
+      <>
+        <strong>Media & resources:</strong> <a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> ·{' '}
+        <a href="https://bit.ly/HiveSpellingApp" target="_blank" rel="noopener noreferrer">Hive App</a> ·{' '}
+        <a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">PrepCenter Promo</a> ·{' '}
+        <a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">Scripps Magazine Feature</a> ·{' '}
+        <a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">Spelling Bee Blog</a> ·{' '}
+        <a href="https://www.fox35orlando.com/video/1079586" target="_blank" rel="noopener noreferrer">Fox 35 Orlando</a>
+      </>
+    )
+  ];
+
+  const innovationParagraphs = [
+    'Hive shifts spelling instruction away from brute memorization toward pattern recognition, linguistic roots, and rule discovery.',
+    'The curriculum distills insights from 7+ years of coaching and competition into adaptive lessons, quizzes, and teacher-ready resources.'
+  ];
+
+  const overviewCards = [
+    { title: 'Current Status', type: 'list', items: statusItems },
+    { title: 'Role & Impact', type: 'list', items: roleItems },
+    { title: 'The Innovation', type: 'text', paragraphs: innovationParagraphs }
+  ];
+
+  const mediaTiles = [
+    { icon: '🌍', title: 'UAE PrepCenter Rollout' },
+    { icon: '🏫', title: 'U.S. Classroom Pilot' }
+  ];
+
   return (
     <section id="hive" className="section hive-section">
       <div className="container">
@@ -24,18 +76,15 @@ const Hive = () => {
           <h2 className="section-title">Hive Education LLC</h2>
         </ScrollAnimation>
         
-        <div className="hive-hero">
+        <div className="hive-hero-simple">
           <ScrollAnimation>
-            <div className="hive-photo-container">
-              <div className="hive-photo-item app-icon">
-                <img src={appIcon} alt="Hive App Icon" className="hive-grid-image" />
-              </div>
-            </div>
-          </ScrollAnimation>
-          <ScrollAnimation>
-            <div className="hive-intro">
+            <div className="hive-hero-copy">
               <h3>EdTech Startup Co-Founder</h3>
-              <p>Founded Hive, an EdTech startup and online learning platform teaching spelling through pattern-recognition. Designed curriculum containing quizzes and lessons based on patterns, spelling rules, and roots observations from 7+ years of spelling coaching and competition experience. Hoping to change the way spelling is taught and reducing dependence on memorization.</p>
+              <p>
+                Founded Hive to teach spelling through pattern recognition instead of rote memorization.
+                The platform bundles lessons, quizzes, and teacher resources built from years of coaching and
+                competition insights.
+              </p>
               <div className="hive-links">
                 <a href="https://www.hivespelling.com/" target="_blank" rel="noopener noreferrer" className="cta-button primary prepcenter">
                   <span className="prepcenter-title">Visit Hive →</span>
@@ -45,6 +94,14 @@ const Hive = () => {
                   <span className="prepcenter-title">Visit Hive PrepCenter →</span>
                   <span className="prepcenter-subtitle">built for UAE Spelling Bee Championship</span>
                 </a>
+              </div>
+            </div>
+          </ScrollAnimation>
+
+          <ScrollAnimation>
+            <div className="hive-hero-visual">
+              <div className="hive-hero-card app-card">
+                <img src={appIcon} alt="Hive app icon" />
               </div>
             </div>
           </ScrollAnimation>
@@ -61,88 +118,57 @@ const Hive = () => {
           </div>
         </ScrollAnimation>
 
-        <div className="hive-content-wrapper">
+        <div className="hive-overview">
+          <div className="hive-overview-grid">
+            {overviewCards.map((card, index) => (
+              <ScrollAnimation key={card.title}>
+                <div className="hive-overview-card">
+                  <h4>{card.title}</h4>
+                  {card.type === 'list' && (
+                    <ul>
+                      {card.items.map((item, itemIndex) => (
+                        <li key={itemIndex}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                  {card.type === 'text' && (
+                    card.paragraphs.map((paragraph, paragraphIndex) => (
+                      <p key={paragraphIndex}>{paragraph}</p>
+                    ))
+                  )}
+                </div>
+              </ScrollAnimation>
+            ))}
+          </div>
+
           <ScrollAnimation>
-            <div className="hive-journey-section">
-              <h3>The Journey</h3>
-              <div className="journey-timeline">
-                {milestones.map((milestone, index) => (
-                  <div key={index} className="milestone-card">
-                    <div className="milestone-year">{milestone.year}</div>
-                    <div className="milestone-content">
-                      <h4>{milestone.title}</h4>
-                      <p>{milestone.desc}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+            <div className="hive-media-row">
+              {mediaTiles.map((tile) => (
+                <div key={tile.title} className="hive-media-tile">
+                  <span role="img" aria-hidden="true">{tile.icon}</span>
+                  <p>{tile.title}</p>
+                </div>
+              ))}
             </div>
           </ScrollAnimation>
-
-          <div className="hive-info-grid">
-            <ScrollAnimation>
-              <div className="hive-details">
-                <div className="detail-card">
-                  <h4>Current Status</h4>
-                  <ul className="hive-list">
-                    <li>500+ active users on platform</li>
-                    <li>Launched platform for The Spelling Bee Championship UAE (<a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer">Hive PrepCenter</a>); negotiated agreements; hosted webinar with hundreds of parents/students (<a href="https://bit.ly/3X6b4hW" target="_blank" rel="noopener noreferrer">Link</a>). 200 users within a week; 1800+ projected by early 2026; 50% free-to-paid conversion.</li>
-                    <li>Inspired by UAE success, launching similar product for US classrooms. Pending evaluation as recommended resource in my district.</li>
-                    <li>Piloted at Goldsboro Elementary and Sanford Middle</li>
-                    <li>Pending evaluation in Seminole County Public Schools (40,000 students, 50+ schools)</li>
-                  </ul>
-                </div>
-
-                <div className="detail-card">
-                  <h4>Role & Impact</h4>
-                  <p>Leads marketing, content creation, and customer acquisition. Manages interns and builds relationships with educators and administrators globally.</p>
-                  <p>Featured on cover of Stroll Heathrow for combining cricket and spelling passions.</p>
-                  <p><strong>Links:</strong></p>
-                  <ul className="hive-list">
-                    <li><a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> | <a href="https://bit.ly/HiveSpellingApp" target="_blank" rel="noopener noreferrer">Hive App</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">Hive PrepCenter Promo</a></li>
-                    <li><a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">Feature in National Spelling Bee Magazine: Combining Cricket & Spelling Passion</a></li>
-                    <li><a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">Media Recognition - Spelling Bee Blog</a> | <a href="https://www.fox35orlando.com/video/1079586" target="_blank" rel="noopener noreferrer">Fox 35 Orlando</a></li>
-                  </ul>
-                </div>
-
-                <div className="detail-card">
-                  <h4>The Innovation</h4>
-                  <p>While others memorized thousands of words daily, the pattern-based approach focuses on patterns, rules, and linguistic roots. This unconventional method became a scalable platform helping students learn spelling more effectively than rote memorization.</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-
-            <ScrollAnimation>
-              <div className="hive-image-gallery">
-                <div className="hive-gallery-item">
-                  <div className="image-placeholder">
-                    <span>📷</span>
-                    <p>Hive Image 1</p>
-                  </div>
-                </div>
-                <div className="hive-gallery-item">
-                  <div className="image-placeholder">
-                    <span>📷</span>
-                    <p>Hive Image 2</p>
-                  </div>
-                </div>
-                <div className="hive-gallery-item">
-                  <div className="image-placeholder">
-                    <span>📷</span>
-                    <p>Hive Image 3</p>
-                  </div>
-                </div>
-                <div className="hive-gallery-item">
-                  <div className="image-placeholder">
-                    <span>📷</span>
-                    <p>Hive Image 4</p>
-                  </div>
-                </div>
-              </div>
-            </ScrollAnimation>
-          </div>
         </div>
+
+        <ScrollAnimation>
+          <div className="hive-journey-section">
+            <h3>Milestones</h3>
+            <div className="journey-timeline">
+              {milestones.map((milestone, index) => (
+                <div key={milestone.title} className="milestone-card">
+                  <div className="milestone-year">{milestone.year}</div>
+                  <div className="milestone-content">
+                    <h4>{milestone.title}</h4>
+                    <p>{milestone.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </ScrollAnimation>
       </div>
     </section>
   );

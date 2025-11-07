@@ -10,6 +10,7 @@
     --purple-dark: #6a1b9a;
     --orange: #ff6b35;
     --orange-dark: #d84315;
+    --link-color: #ffa500;
     --text-primary: #ffffff;
     --text-secondary: #b0b0b0;
     --gradient-1: linear-gradient(135deg, var(--blue), var(--purple));
@@ -21,6 +22,17 @@
     background: var(--dark-bg);
     min-height: 100vh;
     position: relative;
+}
+
+a,
+a:visited {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--link-color);
 }
 
 .container {
@@ -74,7 +86,7 @@
 }
 
 .nav-menu a {
-    color: var(--text-primary);
+    color: var(--link-color);
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -94,7 +106,7 @@
 }
 
 .nav-menu a:hover {
-    color: var(--text-primary);
+    color: var(--link-color);
 }
 
 .nav-menu a:hover::after {
@@ -294,92 +306,62 @@
 }
 
 /* Hive Section - Fixed overlay */
-.hive-hero {
+.hive-hero-simple {
     display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 2rem;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+    gap: 3rem;
     align-items: center;
-    margin-bottom: 3rem;
-    position: relative;
-    z-index: 1;
+    margin-bottom: 3.5rem;
 }
 
-.hive-photo-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-}
-
-.hive-photo-item {
-    overflow: hidden;
-    border-radius: 16px;
-    position: relative;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hive-photo-item:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(156, 39, 176, 0.35);
-}
-
-.hive-photo-item.app-icon {
-    width: 280px;
-    height: 280px;
-    flex-shrink: 0;
-}
-
-.hive-intro {
-    width: 100%;
-    max-width: none;
-}
-
-.hive-photo-item .image-placeholder {
-    width: 100%;
-    height: 100%;
-    background: var(--gradient-1);
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-}
-
-.hive-photo-item .image-placeholder:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-.hive-photo-item.logo-square .image-placeholder {
-    background: var(--gradient-3);
-}
-
-.hive-grid-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    display: block;
-    border-radius: 16px;
-    background: transparent;
-}
-
-.hive-intro h3 {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
+.hive-hero-copy h3 {
+    font-size: 1.85rem;
+    margin-bottom: 1.1rem;
     background: var(--gradient-1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.hive-intro p {
+.hive-hero-copy p {
     color: var(--text-primary);
     line-height: 1.8;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.6rem;
     font-size: 1.05rem;
     font-family: 'Lora', serif;
+}
+
+.hive-hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.hive-hero-card {
+    border-radius: 18px;
+    background: var(--dark-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(25, 7, 53, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hive-hero-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 50px rgba(156, 39, 176, 0.35);
+}
+
+.hive-hero-card.app-card {
+    padding: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at top, rgba(156, 39, 176, 0.25), transparent 65%), var(--dark-secondary);
+}
+
+.hive-hero-card.app-card img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
 }
 
 .hive-metrics {
@@ -418,69 +400,117 @@
     font-size: 0.9rem;
 }
 
-.hive-image-gallery {
+.hive-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin: 3rem 0 4rem;
+}
+
+.hive-overview-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 1.25rem;
-    max-width: 100%;
-    position: sticky;
-    top: 100px;
-    align-items: stretch;
-    height: 100%;
-    min-height: 600px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
 }
 
-.hive-gallery-item {
-    min-height: 280px;
-    height: 100%;
+.hive-overview-card {
+    background: var(--dark-secondary);
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hive-gallery-item:nth-child(1) {
-    grid-row: 1;
-    grid-column: 1;
+.hive-overview-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(20, 12, 38, 0.4);
 }
 
-.hive-gallery-item:nth-child(2) {
-    grid-row: 1;
-    grid-column: 2;
+.hive-overview-card h4 {
+    font-size: 1.25rem;
+    margin: 0;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-.hive-gallery-item:nth-child(3) {
-    grid-row: 2;
-    grid-column: 1;
+.hive-overview-card p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+    font-family: 'Lora', serif;
 }
 
-.hive-gallery-item:nth-child(4) {
-    grid-row: 2;
-    grid-column: 2;
+.hive-overview-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
 
-.hive-gallery-item .image-placeholder {
-    width: 100%;
-    height: 100%;
-    min-height: 280px;
-    background: var(--gradient-1);
-    border-radius: 15px;
+.hive-overview-card li {
+    position: relative;
+    padding-left: 1.75rem;
+    color: rgba(255, 255, 255, 0.78);
+    line-height: 1.7;
+    font-family: 'Lora', serif;
+}
+
+.hive-overview-card li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+.hive-media-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.hive-media-tile {
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: linear-gradient(135deg, rgba(156, 39, 176, 0.25), rgba(74, 144, 226, 0.25));
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
+    gap: 0.75rem;
+    padding: 2rem;
+    aspect-ratio: 16 / 9;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.95rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hive-gallery-item .image-placeholder:hover {
-    transform: scale(1.05);
+.hive-media-tile span {
+    font-size: 2rem;
 }
 
-.hive-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 100%;
+.hive-media-tile p {
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.06em;
 }
+
+.hive-media-tile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 50px rgba(156, 39, 176, 0.35);
+}
+
 
 .detail-card {
     background: var(--dark-secondary);
@@ -553,14 +583,14 @@
 }
 
 .hive-list a {
-    color: var(--purple);
+    color: var(--link-color);
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s ease;
 }
 
 .hive-list a:hover {
-    border-bottom-color: var(--purple);
+    border-bottom-color: var(--link-color);
 }
 
 .certifications-section {
@@ -624,11 +654,6 @@
     font-style: italic;
 }
 
-/* Hive Journey Timeline */
-.hive-content-wrapper {
-    margin-top: 4rem;
-}
-
 .hive-journey-section {
     margin-bottom: 4rem;
 }
@@ -651,20 +676,6 @@
     max-width: 100%;
 }
 
-.hive-info-grid {
-    display: grid;
-    grid-template-columns: 1.4fr 1fr;
-    gap: 3rem;
-    align-items: start;
-}
-
-.hive-details {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 100%;
-    height: 100%;
-}
 
 .milestone-card {
     background: var(--dark-secondary);
@@ -1797,19 +1808,35 @@
         gap: 2rem;
     }
 
-    .hive-hero {
+    .hive-hero-simple {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
     }
 
-    .hive-photo-item.app-icon {
-        width: 200px;
-        height: 200px;
+    .hive-hero-visual {
+        justify-content: center;
     }
 
-    .hive-info-grid {
+    .hive-hero-card.app-card {
+        padding: 1.25rem;
+    }
+
+    .hive-hero-card.app-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hive-overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hive-media-row {
         grid-template-columns: 1fr;
-        gap: 2rem;
+    }
+
+    .hive-overview-grid,
+    .hive-media-row {
+        grid-template-columns: 1fr;
     }
 
     .hive-journey-section {
@@ -1935,6 +1962,18 @@
     .interests-grid {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .hive-hero-visual {
+        flex-direction: column;
+    }
+
+    .hive-overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hive-media-row {
+        grid-template-columns: 1fr;
     }
 
     .honors-controls {

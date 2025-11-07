@@ -19,6 +19,12 @@ const Interests = () => {
           image: 'NSF Coaching'
         },
         {
+          title: 'Cricket',
+          icon: '🏏',
+          description: 'I am a dedicated cricketer, playing tournaments throughout the United States and abroad, including the Sir Garfield Sobers International U19 Cricket Tournament in Barbados. I am very active in the Florida cricket scene, supporting grassroots cricket and representing Floridian teams at various tournaments. I have represented the South Zone at the USA Cricket U15 National Championships and the Southeast Zone at USA Cricket U19 Conference Championships.',
+          image: 'Cricket Image'
+        },
+        {
           title: 'Robotics & Engineering',
           icon: '🦾',
           description: 'Founded Markham Mechatronic Madness—an annual event at Markham Woods Middle School where community members interact with student-built robots. The event raises funds to sustain the robotics program and I\'m invited back each year as chief guest of honor. I love seeing students explore robotics beyond metal parts and computer cores.',
