@@ -1,5 +1,9 @@
 import React from 'react';
 import ScrollAnimation from './ScrollAnimation';
+import cricketPortrait1 from '../assets/ekanshP1.jpg';
+import cricketLandscape1 from '../assets/ekanshL1.png';
+import cricketPortrait2 from '../assets/ekanshP3.jpg';
+import cricketLandscape2 from '../assets/ekanshL2.jpg';
 
 const Cricket = () => {
   const achievements = [
@@ -60,10 +64,11 @@ const Cricket = () => {
         <div className="cricket-stats-section-with-image">
           <ScrollAnimation animation="fade-right">
             <div className="cricket-image-single">
-              <div className="image-placeholder portrait">
-                <span>📷</span>
-                <p>Cricket Portrait Image 1</p>
-              </div>
+              <img
+                src={cricketPortrait1}
+                alt="Ekansh Rastogi holding the Sir Garfield Sobers trophy on the field"
+                className="cricket-photo portrait"
+              />
             </div>
           </ScrollAnimation>
           <ScrollAnimation animation="fade-left">
@@ -86,9 +91,34 @@ const Cricket = () => {
               </div>
               <div className="cricket-media-section">
                 <h4>In the Media</h4>
-                <ul className="hive-list">
-                  <li>In Prost International article, called "star of that day and every other victory" (<a href="https://prostinternational.com/2025/07/28/tri-state-cricketers-on-winning-barbados-tour" target="_blank" rel="noopener noreferrer">Link</a>)</li>
-                  <li><a href="https://www.youtube.com/live/yEs7_6pQ2V0?t=750s" target="_blank" rel="noopener noreferrer">Sir Garfield Sobers Tournament Finals broadcast</a></li>
+                <ul className="hive-list media-list">
+                  <li>
+                    <a
+                      href="https://prostinternational.com/2025/07/28/tri-state-cricketers-on-winning-barbados-tour"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Prost International feature
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.youtube.com/live/yEs7_6pQ2V0?t=750s"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Sir Garfield Sobers Finals broadcast
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://barbadostoday.bb/2025/07/18/new-yorkers-lift-2025-sir-garry-u-19-cricket-title/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Barbados Today: Sir Garry U-19 title
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -119,10 +149,11 @@ const Cricket = () => {
           </ScrollAnimation>
           <ScrollAnimation animation="fade-left">
             <div className="cricket-image-single">
-              <div className="image-placeholder landscape">
-                <span>📷</span>
-                <p>Cricket Landscape Image 1</p>
-              </div>
+              <img
+                src={cricketLandscape1}
+                alt="Tri-State Development team celebrating together in Barbados"
+                className="cricket-photo landscape"
+              />
             </div>
           </ScrollAnimation>
         </div>
@@ -130,10 +161,11 @@ const Cricket = () => {
         <div className="cricket-leadership-section-with-image">
           <ScrollAnimation animation="fade-right">
             <div className="cricket-image-single">
-              <div className="image-placeholder portrait">
-                <span>📷</span>
-                <p>Cricket Portrait Image 2</p>
-              </div>
+              <img
+                src={cricketPortrait2}
+                alt="Ekansh Rastogi holding a match ball after a bowling performance"
+                className="cricket-photo portrait"
+              />
             </div>
           </ScrollAnimation>
           <ScrollAnimation animation="fade-left">
@@ -174,10 +206,11 @@ const Cricket = () => {
           </ScrollAnimation>
           <ScrollAnimation animation="fade-left">
             <div className="cricket-image-single">
-              <div className="image-placeholder landscape">
-                <span>📷</span>
-                <p>Cricket Landscape Image 2</p>
-              </div>
+              <img
+                src={cricketLandscape2}
+                alt="Ekansh Rastogi receiving the Sir Garfield Sobers championship trophy"
+                className="cricket-photo landscape"
+              />
             </div>
           </ScrollAnimation>
         </div>

@@ -52,10 +52,6 @@ const Interests = () => {
               {category.items.map((activity, index) => (
                 <ScrollAnimation key={index} animation="fade-up" delay={index * 0.08}>
                   <div className="interest-card">
-                    <div className="interest-image-placeholder">
-                      <span>{activity.icon}</span>
-                      <p>{activity.image}</p>
-                    </div>
                     <div className="interest-content">
                       <h3>{activity.title}</h3>
                       <p>{activity.description}</p>

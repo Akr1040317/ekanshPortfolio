@@ -1,6 +1,8 @@
 import React from 'react';
 import ScrollAnimation from './ScrollAnimation';
 import appIcon from '../assets/app-icon-DliWh03c.jpg';
+import uaeDashboard from '../assets/UAESpelling.png';
+import usClassroom from '../assets/dashboard.png';
 
 const Hive = () => {
   const metrics = [
@@ -174,14 +176,36 @@ const Hive = () => {
 
           <ScrollAnimation animation="fade-up">
             <div className="hive-media-row">
-              {mediaTiles.map((tile, index) => (
-                <ScrollAnimation key={tile.title} animation="fade-up" delay={index * 0.1}>
-                  <div className="hive-media-tile">
-                    <span role="img" aria-hidden="true">{tile.icon}</span>
-                    <p>{tile.title}</p>
-                  </div>
-                </ScrollAnimation>
-              ))}
+              <ScrollAnimation animation="fade-up">
+                <a
+                  href="https://www.hivespelling.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hive-media-tile image-tile"
+                >
+                  <img
+                    src={usClassroom}
+                    alt="HiveSpelling.com student dashboard screenshot"
+                    className="hive-media-image"
+                  />
+                  <p>HiveSpelling.com Student Dashboard</p>
+                </a>
+              </ScrollAnimation>
+              <ScrollAnimation animation="fade-up" delay={0.1}>
+                <a
+                  href="https://learn.spellingbee.ae/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hive-media-tile image-tile"
+                >
+                  <img
+                    src={uaeDashboard}
+                    alt="UAE Spelling Bee Championship learning dashboard screenshot"
+                    className="hive-media-image"
+                  />
+                  <p>UAE Spelling Bee Championship Learning Dashboard</p>
+                </a>
+              </ScrollAnimation>
             </div>
           </ScrollAnimation>
         </div>
