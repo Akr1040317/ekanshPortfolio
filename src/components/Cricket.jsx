@@ -68,7 +68,7 @@ const Cricket = () => {
                 </a>
               </div>
               <div className="cricket-media-section">
-                <h4>Media Recognition</h4>
+                <h4>In the Media</h4>
                 <ul className="hive-list">
                   <li>In Prost International article, called "star of that day and every other victory" (<a href="https://prostinternational.com/2025/07/28/tri-state-cricketers-on-winning-barbados-tour" target="_blank" rel="noopener noreferrer">Link</a>)</li>
                   <li><a href="https://www.youtube.com/live/yEs7_6pQ2V0?t=750s" target="_blank" rel="noopener noreferrer">Sir Garfield Sobers Tournament Finals broadcast</a></li>

@@ -47,7 +47,7 @@ const Hive = () => {
     'Featured on cover of Stroll Heathrow for bridging cricket and spelling passions.',
     (
       <>
-        <strong>Media & resources:</strong> <a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> ·{' '}
+        <strong>In the media:</strong> <a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> ·{' '}
         <a href="https://apps.apple.com/us/app/hive-spelling-bee-prep-app/id6479415050" target="_blank" rel="noopener noreferrer">Hive App</a> ·{' '}
         <a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">PrepCenter Promo</a> ·{' '}
         <a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">Scripps Magazine Feature</a> ·{' '}
