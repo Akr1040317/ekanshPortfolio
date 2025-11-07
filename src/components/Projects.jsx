@@ -47,10 +47,6 @@ const Projects = () => {
             {leadership.map((item, index) => (
               <ScrollAnimation key={index}>
                 <div className="project-card">
-                  <div className="project-image-placeholder">
-                    <span>{item.icon}</span>
-                    <p>{item.placeholder}</p>
-                  </div>
                   <div className="project-info">
                     <h3>{item.title}</h3>
                     {item.years && <p className="project-years">{item.years}</p>}
@@ -72,10 +68,6 @@ const Projects = () => {
             {projects.map((project, index) => (
               <ScrollAnimation key={index}>
                 <div className="project-card">
-                  <div className="project-image-placeholder">
-                    <span>{project.icon}</span>
-                    <p>{project.placeholder}</p>
-                  </div>
                   <div className="project-info">
                     <h3>{project.title}</h3>
                     {project.years && <p className="project-years">{project.years}</p>}
