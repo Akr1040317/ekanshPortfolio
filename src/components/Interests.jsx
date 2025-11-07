@@ -13,6 +13,12 @@ const Interests = () => {
           image: 'MUN Image'
         },
         {
+          title: 'NorthSouth Foundation Coach & SME',
+          icon: '📚',
+          description: 'Taught 50+ students in grades K-8 to spell and prepare for spelling bees, designed international organization\'s spelling curriculum, created gamified learning materials, delivered parent info webinars. Administered and judged national qualifiers for spelling/vocabulary/geography bees.',
+          image: 'NSF Coaching'
+        },
+        {
           title: 'Robotics & Engineering',
           icon: '🦾',
           description: 'Founded Markham Mechatronic Madness—an annual event at Markham Woods Middle School where community members interact with student-built robots. The event raises funds to sustain the robotics program and I\'m invited back each year as chief guest of honor. I love seeing students explore robotics beyond metal parts and computer cores.',

@@ -21,13 +21,6 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'NorthSouth Foundation Coach & SME',
-      description: 'Taught 50+ students in grades K-8 to spell and prepare for spelling bees, designed international organization\'s spelling curriculum, created gamified learning materials, delivered parent info webinars. Administered and judged national qualifiers for spelling/vocabulary/geography bees.',
-      icon: '📚',
-      placeholder: 'Teaching Project',
-      years: '2022 - 2025'
-    },
-    {
       title: 'Spellbound: A Parent\'s Guide to Raising Young Spellers',
       description: 'Currently writing a comprehensive guide for parents on raising young spellers, based on years of competition experience and coaching insights.',
       icon: '📖',

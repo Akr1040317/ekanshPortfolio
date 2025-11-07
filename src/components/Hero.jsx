@@ -16,9 +16,6 @@ const Hero = () => {
             <a href={resumePdf} className="cta-button primary" download>
               Download Resume
             </a>
-            <a href="#projects" className="cta-button secondary">
-              View Projects
-            </a>
             <a 
               href="https://www.linkedin.com/in/ekansh-rastogi-378b41315/" 
               target="_blank" 
