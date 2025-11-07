@@ -47,12 +47,29 @@ const Hive = () => {
     'Featured on cover of Stroll Heathrow for bridging cricket and spelling passions.',
     (
       <>
-        <strong>In the media:</strong> <a href="https://www.hivespelling.com" target="_blank" rel="noopener noreferrer">Hive Website</a> ·{' '}
-        <a href="https://apps.apple.com/us/app/hive-spelling-bee-prep-app/id6479415050" target="_blank" rel="noopener noreferrer">Hive App</a> ·{' '}
-        <a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">PrepCenter Promo</a> ·{' '}
-        <a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">Scripps Magazine Feature</a> ·{' '}
-        <a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">Spelling Bee Blog</a> ·{' '}
-        <a href="https://www.fox35orlando.com/video/1079586" target="_blank" rel="noopener noreferrer">Fox 35 Orlando</a>
+        <strong>In the media:</strong>
+        <ul className="hive-list media-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=4hxN1-z-aco" target="_blank" rel="noopener noreferrer">
+              Hive PrepCenter Promo
+            </a>
+          </li>
+          <li>
+            <a href="https://issuu.com/cincinnatimagazine/docs/scripps_national_spelling_bee_2022/96" target="_blank" rel="noopener noreferrer">
+              Scripps National Spelling Bee Magazine Feature
+            </a>
+          </li>
+          <li>
+            <a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">
+              Spelling Bee Blog Profile
+            </a>
+          </li>
+          <li>
+            <a href="https://www.fox35orlando.com/video/1079586" target="_blank" rel="noopener noreferrer">
+              Fox 35 Orlando Interview
+            </a>
+          </li>
+        </ul>
       </>
     )
   ];
@@ -97,6 +114,14 @@ const Hive = () => {
                 <a href="https://learn.spellingbee.ae" target="_blank" rel="noopener noreferrer" className="cta-button prepcenter">
                   <span className="prepcenter-title">Visit Hive PrepCenter →</span>
                   <span className="prepcenter-subtitle">built for UAE Spelling Bee Championship</span>
+                </a>
+                <a
+                  href="https://apps.apple.com/us/app/hive-spelling-bee-prep-app/id6479415050"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="cta-button secondary"
+                >
+                  Download Hive App
                 </a>
               </div>
             </div>
