@@ -1850,8 +1850,8 @@
         grid-template-columns: 1fr;
     }
 
-    .honors-grid {
-        grid-template-columns: 1fr;
+    .honor-item {
+        flex: 0 0 85vw;
     }
 
     .nav-menu {
@@ -1936,14 +1936,266 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
+
+    .honors-controls {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+    }
+
+    .honors-select {
+        width: 100%;
+    }
+
+    .honor-item {
+        flex: 0 0 82vw;
+    }
+
+    .honors-carousel {
+        margin-top: 2rem;
+    }
+
+    .honors-nav {
+        display: none;
+    }
+
+    .honors-viewport {
+        padding: 1rem 0 1.5rem;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .honors-viewport::before,
+    .honors-viewport::after {
+        display: none;
+    }
+
+    .honors-hint {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 /* Honors Section */
-.honors-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
+.honors-controls {
     margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.honors-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.honors-filter-label {
+    font-size: 0.75rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.honors-chip-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.honors-chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 999px;
+    padding: 0.45rem 1.15rem;
+    font-size: 0.85rem;
+    color: var(--text-primary);
+    font-weight: 500;
+    cursor: pointer;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.3s ease;
+}
+
+.honors-chip:hover {
+    border-color: rgba(255, 255, 255, 0.4);
+    transform: translateY(-1px);
+}
+
+.honors-chip.active {
+    background: var(--gradient-1);
+    border-color: transparent;
+    box-shadow: 0 6px 20px rgba(156, 39, 176, 0.3);
+}
+
+.honors-select {
+    background: var(--dark-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 0.6rem 2.5rem 0.6rem 0.9rem;
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width=%2212%22 height=%228%22 viewBox=%220 0 12 8%22 fill=%22none%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cpath d=%22M1 1.5L6 6.5L11 1.5%22 stroke=%22%23FFFFFF%22 stroke-width=%221.5%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.9rem center;
+    min-width: 160px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.honors-select:focus {
+    outline: none;
+    border-color: rgba(156, 39, 176, 0.8);
+    box-shadow: 0 0 0 3px rgba(156, 39, 176, 0.2);
+}
+
+.honors-carousel {
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.honors-viewport {
+    position: relative;
+    overflow-x: auto;
+    padding: 1rem 1.5rem 1.5rem;
+    scroll-snap-type: x proximity;
+    -webkit-overflow-scrolling: touch;
+    mask-image: linear-gradient(to right, transparent 0, black 72px, black calc(100% - 72px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 72px, black calc(100% - 72px), transparent 100%);
+}
+
+.honors-viewport::before,
+.honors-viewport::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 72px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.honors-viewport::before {
+    left: 0;
+    background: linear-gradient(to right, var(--dark-primary), rgba(20, 12, 38, 0));
+}
+
+.honors-viewport::after {
+    right: 0;
+    background: linear-gradient(to left, var(--dark-primary), rgba(20, 12, 38, 0));
+}
+
+.honors-viewport::-webkit-scrollbar {
+    height: 6px;
+}
+
+.honors-viewport::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 999px;
+}
+
+.honors-viewport::-webkit-scrollbar-thumb {
+    background: rgba(156, 39, 176, 0.6);
+    border-radius: 999px;
+}
+
+.honors-track {
+    display: flex;
+    gap: 1.5rem;
+    min-width: min(100%, 320px);
+}
+
+.honor-item {
+    flex: 0 0 clamp(280px, 28vw, 360px);
+    scroll-snap-align: start;
+}
+
+.honors-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(26, 16, 42, 0.85);
+    color: var(--text-primary);
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 12px 30px rgba(156, 39, 176, 0.35);
+    transition: opacity 0.3s ease, transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0.55;
+    z-index: 4;
+    backdrop-filter: blur(6px);
+}
+
+.honors-carousel:hover .honors-nav,
+.honors-nav:focus-visible {
+    opacity: 1;
+}
+
+.honors-nav span {
+    pointer-events: none;
+    line-height: 1;
+}
+
+.honors-nav-left {
+    left: 0.25rem;
+}
+
+.honors-nav-right {
+    right: 0.25rem;
+}
+
+.honors-nav:hover {
+    transform: translateY(-50%) scale(1.05);
+    background: var(--gradient-1);
+    color: var(--text-primary);
+    box-shadow: 0 16px 36px rgba(156, 39, 176, 0.45);
+}
+
+.honors-nav:focus-visible {
+    outline: 3px solid rgba(156, 39, 176, 0.7);
+    outline-offset: 4px;
+}
+
+.honors-nav:disabled,
+.honors-nav.disabled {
+    opacity: 0.18;
+    cursor: default;
+    pointer-events: none;
+    box-shadow: none;
+}
+
+.honors-hint {
+    margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    opacity: 0;
+    transform: translateY(-6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.honors-hint.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.honors-hint::before {
+    content: '↔';
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .honor-card {
@@ -1953,7 +2205,8 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     gap: 1rem;
-    align-items: start;
+    align-items: flex-start;
+    height: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1974,7 +2227,7 @@
 .honor-header {
     display: flex;
     justify-content: space-between;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 0.75rem;
     gap: 1rem;
     flex-wrap: wrap;
@@ -2047,6 +2300,13 @@
     line-height: 1.5;
 }
 
+.honors-empty-state {
+    margin-top: 2rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 1rem;
@@ -2068,8 +2328,12 @@
         font-size: 1.75rem;
     }
 
-    .honors-grid {
-        grid-template-columns: 1fr;
+    .honor-item {
+        flex: 0 0 calc(100% - 1rem);
+    }
+
+    .honors-chip-group {
+        gap: 0.5rem;
     }
 }
 
