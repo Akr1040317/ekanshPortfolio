@@ -25,12 +25,6 @@ const Interests = () => {
           image: 'Cricket Image'
         },
         {
-          title: 'Robotics & Engineering',
-          icon: '🦾',
-          description: 'Founded Markham Mechatronic Madness—an annual event at Markham Woods Middle School where community members interact with student-built robots. The event raises funds to sustain the robotics program and I\'m invited back each year as chief guest of honor. I love seeing students explore robotics beyond metal parts and computer cores.',
-          image: 'Robotics Image'
-        },
-        {
           title: 'Tennis',
           icon: '🎾',
           description: '3-year Varsity Tennis Letterman, playing singles line 5. 2x winner of All-County Athlete Academic Achievement Award. Tennis teaches discipline, persistence, and the value of practice—skills that translate to everything else I do.',
