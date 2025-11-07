@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePdf from '../assets/Ekansh_Rastogi_Resume (1).pdf';
+import resumePdf from '../assets/EkanshRastogi.pdf';
 import heroImage from '../assets/ekansh-scripps.jpeg';
 
 const Hero = () => {

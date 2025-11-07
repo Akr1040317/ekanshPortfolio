@@ -15,7 +15,6 @@ const About = () => {
     { name: 'Information Technology Specialist - Java' }
   ];
 
-
   return (
     <section id="about" className="section">
       <div className="container">
@@ -43,19 +42,11 @@ const About = () => {
                 </p>
               </div>
 
-              <div className="highlights-grid">
-                {highlights.map((highlight, index) => (
-                  <div key={index} className="highlight-card">
-                    <div className="highlight-icon">{highlight.icon}</div>
-                    <div className="highlight-content">
-                      <h4>{highlight.title}</h4>
-                      <p>{highlight.desc}</p>
-                      <span className="highlight-subtext">{highlight.subtext}</span>
-                    </div>
-                  </div>
-                ))}
+              <div className="about-vision">
+                <h3>Looking Forward</h3>
+                <p>I'm excited about merging engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
+                <p>My goal is to create platforms that help others discover their potential, whether through innovative learning methods, leadership opportunities, or community-building initiatives.</p>
               </div>
-
 
               <div className="certifications-section">
                 <h3>Career/Industry Certifications</h3>
@@ -65,17 +56,28 @@ const About = () => {
                   ))}
                 </ul>
               </div>
-
-              <div className="about-vision">
-                <h3>Looking Forward</h3>
-                <p>I'm excited about merging engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
-                <p>My goal is to create platforms that help others discover their potential, whether through innovative learning methods, leadership opportunities, or community-building initiatives.</p>
-              </div>
             </div>
           </ScrollAnimation>
           <ScrollAnimation>
-            <div className="about-image-placeholder">
-              <img src={portrait} alt="Ekansh Rastogi professional portrait" style={{ width: '100%', height: 'auto', borderRadius: '16px', display: 'block' }} />
+            <div className="about-profile">
+              <div className="about-image-wrapper">
+                <img src={portrait} alt="Ekansh Rastogi professional portrait" />
+              </div>
+              <div className="about-profile-card">
+                <h4>Highlights</h4>
+                <div className="highlights-grid profile">
+                  {highlights.map((highlight) => (
+                    <div key={highlight.title} className="highlight-card compact">
+                      <div className="highlight-icon">{highlight.icon}</div>
+                      <div className="highlight-content">
+                        <h4>{highlight.title}</h4>
+                        <p>{highlight.desc}</p>
+                        <span className="highlight-subtext">{highlight.subtext}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </ScrollAnimation>
         </div>

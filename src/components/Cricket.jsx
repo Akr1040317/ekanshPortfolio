@@ -165,16 +165,6 @@ const Cricket = () => {
           </ScrollAnimation>
         </div>
 
-        <ScrollAnimation>
-          <div className="cricket-video-section">
-            <div className="cricket-image-single video-section">
-              <div className="image-placeholder video-placeholder">
-                <span>🎥</span>
-                <p>Cricket Video</p>
-              </div>
-            </div>
-          </div>
-        </ScrollAnimation>
       </div>
     </section>
   );

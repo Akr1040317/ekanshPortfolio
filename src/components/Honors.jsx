@@ -44,10 +44,10 @@ const HONORS = [
   },
   {
     title: 'PrincetonMUNC',
-    achievement: 'Outstanding Delegate',
+    achievement: 'Selected Delegate',
     level: 'National',
     year: '2025',
-    details: 'Selected from 128 delegates to represent school',
+    details: 'Chosen from 128 delegates to represent school',
     icon: '🌍'
   },
   {
