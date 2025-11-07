@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -11,6 +12,11 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const timer = window.requestAnimationFrame(() => setMounted(true));
+    return () => window.cancelAnimationFrame(timer);
   }, []);
 
   const toggleMenu = () => {
@@ -42,7 +48,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''} ${mounted ? 'visible' : ''}`.trim()}>
       <div className="nav-container">
         <div className="nav-logo">EKANSH RASTOGI</div>
         <ul className={`nav-menu ${isMenuOpen ? 'active' : ''}`}>

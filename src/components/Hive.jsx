@@ -93,12 +93,12 @@ const Hive = () => {
   return (
     <section id="hive" className="section hive-section">
       <div className="container">
-        <ScrollAnimation>
+        <ScrollAnimation animation="fade-up">
           <h2 className="section-title">Hive Education LLC</h2>
         </ScrollAnimation>
         
         <div className="hive-hero-simple">
-          <ScrollAnimation>
+          <ScrollAnimation animation="fade-right">
             <div className="hive-hero-copy">
               <h3>EdTech Startup Co-Founder</h3>
               <p>
@@ -127,7 +127,7 @@ const Hive = () => {
             </div>
           </ScrollAnimation>
 
-          <ScrollAnimation>
+          <ScrollAnimation animation="fade-left">
             <div className="hive-hero-visual">
               <div className="hive-hero-card app-card">
                 <img src={appIcon} alt="Hive app icon" />
@@ -136,13 +136,15 @@ const Hive = () => {
           </ScrollAnimation>
         </div>
 
-        <ScrollAnimation>
+        <ScrollAnimation animation="fade-up">
           <div className="hive-metrics">
             {metrics.map((metric, index) => (
-              <div key={index} className="metric-card">
-                <div className="metric-number">{metric.number}</div>
-                <div className="metric-label">{metric.label}</div>
-              </div>
+              <ScrollAnimation key={metric.label} animation="fade-up" delay={index * 0.08}>
+                <div className="metric-card">
+                  <div className="metric-number">{metric.number}</div>
+                  <div className="metric-label">{metric.label}</div>
+                </div>
+              </ScrollAnimation>
             ))}
           </div>
         </ScrollAnimation>
@@ -150,7 +152,7 @@ const Hive = () => {
         <div className="hive-overview">
           <div className="hive-overview-grid">
             {overviewCards.map((card, index) => (
-              <ScrollAnimation key={card.title}>
+              <ScrollAnimation key={card.title} animation="fade-up" delay={index * 0.1}>
                 <div className="hive-overview-card">
                   <h4>{card.title}</h4>
                   {card.type === 'list' && (
@@ -170,19 +172,21 @@ const Hive = () => {
             ))}
           </div>
 
-          <ScrollAnimation>
+          <ScrollAnimation animation="fade-up">
             <div className="hive-media-row">
-              {mediaTiles.map((tile) => (
-                <div key={tile.title} className="hive-media-tile">
-                  <span role="img" aria-hidden="true">{tile.icon}</span>
-                  <p>{tile.title}</p>
-                </div>
+              {mediaTiles.map((tile, index) => (
+                <ScrollAnimation key={tile.title} animation="fade-up" delay={index * 0.1}>
+                  <div className="hive-media-tile">
+                    <span role="img" aria-hidden="true">{tile.icon}</span>
+                    <p>{tile.title}</p>
+                  </div>
+                </ScrollAnimation>
               ))}
             </div>
           </ScrollAnimation>
         </div>
 
-        <ScrollAnimation>
+        <ScrollAnimation animation="fade-up">
           <div className="hive-journey-section">
             <h3>Milestones</h3>
             <div className="journey-timeline">

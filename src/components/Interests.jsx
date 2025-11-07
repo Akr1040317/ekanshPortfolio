@@ -7,6 +7,12 @@ const Interests = () => {
       category: 'Activities & Hobbies',
       items: [
         {
+          title: 'Varsity Speech & Debate Co-Captain',
+          icon: '🎤',
+          description: 'Redesigned club meeting formats to provide personalized instruction and mentorship, doubling retention and quadrupling active membership. Advanced to multiple NSDA and NCFL national tournaments with several top-5 finishes.',
+          image: 'Speech & Debate'
+        },
+        {
           title: 'Model United Nations',
           icon: '🌍',
           description: '3-year competitor at Seminole High School. Selected to represent school at PrincetonMUNC (chosen from 128 delegates) and GatorMUN (hosted by UF). I mentor newer members and love the diplomacy, research, and problem-solving that MUN demands.',
@@ -37,14 +43,14 @@ const Interests = () => {
   return (
     <section id="interests" className="section">
       <div className="container">
-        <ScrollAnimation>
+        <ScrollAnimation animation="fade-up">
           <h2 className="section-title">Activities & Interests</h2>
         </ScrollAnimation>
         {activities.map((category, categoryIndex) => (
           <div key={categoryIndex}>
             <div className="interests-grid">
               {category.items.map((activity, index) => (
-                <ScrollAnimation key={index}>
+                <ScrollAnimation key={index} animation="fade-up" delay={index * 0.08}>
                   <div className="interest-card">
                     <div className="interest-image-placeholder">
                       <span>{activity.icon}</span>

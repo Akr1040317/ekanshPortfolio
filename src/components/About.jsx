@@ -18,11 +18,11 @@ const About = () => {
   return (
     <section id="about" className="section">
       <div className="container">
-        <ScrollAnimation>
+        <ScrollAnimation animation="fade-up">
           <h2 className="section-title">About Me</h2>
         </ScrollAnimation>
         <div className="about-content">
-          <ScrollAnimation>
+          <ScrollAnimation animation="fade-right">
             <div className="about-text">
               <div className="about-intro">
                 <h3>IB Senior at Seminole High School</h3>
@@ -52,13 +52,17 @@ const About = () => {
                 <h3>Career/Industry Certifications</h3>
                 <ul className="certifications-list">
                   {certifications.map((cert, index) => (
-                    <li key={index}>{cert.name}</li>
+                    <li key={index}>
+                      <ScrollAnimation animation="fade-up" delay={index * 0.05}>
+                        {cert.name}
+                      </ScrollAnimation>
+                    </li>
                   ))}
                 </ul>
               </div>
             </div>
           </ScrollAnimation>
-          <ScrollAnimation>
+          <ScrollAnimation animation="fade-left">
             <div className="about-profile">
               <div className="about-image-wrapper">
                 <img src={portrait} alt="Ekansh Rastogi professional portrait" />
@@ -66,15 +70,17 @@ const About = () => {
               <div className="about-profile-card">
                 <h4>Highlights</h4>
                 <div className="highlights-grid profile">
-                  {highlights.map((highlight) => (
-                    <div key={highlight.title} className="highlight-card compact">
-                      <div className="highlight-icon">{highlight.icon}</div>
-                      <div className="highlight-content">
-                        <h4>{highlight.title}</h4>
-                        <p>{highlight.desc}</p>
-                        <span className="highlight-subtext">{highlight.subtext}</span>
+                  {highlights.map((highlight, index) => (
+                    <ScrollAnimation key={highlight.title} animation="fade-up" delay={index * 0.08}>
+                      <div className="highlight-card compact">
+                        <div className="highlight-icon">{highlight.icon}</div>
+                        <div className="highlight-content">
+                          <h4>{highlight.title}</h4>
+                          <p>{highlight.desc}</p>
+                          <span className="highlight-subtext">{highlight.subtext}</span>
+                        </div>
                       </div>
-                    </div>
+                    </ScrollAnimation>
                   ))}
                 </div>
               </div>

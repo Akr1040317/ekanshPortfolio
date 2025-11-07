@@ -209,7 +209,7 @@ const Honors = () => {
   return (
     <section id="honors" className="section">
       <div className="container">
-        <ScrollAnimation>
+        <ScrollAnimation animation="fade-up">
           <h2 className="section-title">Honors & Achievements</h2>
         </ScrollAnimation>
 
@@ -263,7 +263,12 @@ const Honors = () => {
           <div className="honors-viewport" ref={viewportRef}>
             <div className="honors-track">
               {filteredHonors.map((honor, index) => (
-                <ScrollAnimation key={`${honor.title}-${index}`} className="honor-item">
+                <ScrollAnimation
+                  key={`${honor.title}-${index}`}
+                  className="honor-item"
+                  animation="fade-up"
+                  delay={index * 0.08}
+                >
                   <div className="honor-card">
                     <div className="honor-icon">{honor.icon}</div>
                     <div className="honor-content">
