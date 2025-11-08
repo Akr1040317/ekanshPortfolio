@@ -111,6 +111,8 @@ const extractYears = (yearValue) => {
     .filter(Boolean);
 };
 
+const LEVEL_ORDER = ['International', 'National', 'Regional', 'County', 'School'];
+
 const Honors = () => {
   const [levelFilter, setLevelFilter] = useState('All');
   const [yearFilter, setYearFilter] = useState('All');
@@ -119,7 +121,10 @@ const Honors = () => {
   const viewportRef = useRef(null);
 
   const levelOptions = useMemo(
-    () => ['All', ...Array.from(new Set(HONORS.map((honor) => honor.level)))],
+    () => [
+      'All',
+      ...LEVEL_ORDER.filter((level) => HONORS.some((honor) => honor.level === level))
+    ],
     []
   );
 
