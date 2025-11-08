@@ -14,9 +14,10 @@ const Contact = () => {
             href={linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="cta-button"
+            className="cta-button linkedin"
           >
-            LinkedIn
+            <span className="cta-icon">in</span>
+            <span>LinkedIn</span>
           </a>
           <a href={`mailto:${email}`} className="cta-button secondary">
             {email}

@@ -1431,6 +1431,33 @@ a:focus-visible {
     box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4);
 }
 
+.cta-button.linkedin {
+    background: #0a66c2;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.cta-button.linkedin:hover {
+    background: #094c8f;
+    box-shadow: 0 12px 30px rgba(10, 102, 194, 0.35);
+}
+
+.cta-button.linkedin .cta-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #0a66c2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
 .hive-links {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(190px, max-content));
