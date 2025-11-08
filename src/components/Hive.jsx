@@ -116,9 +116,10 @@ const Hive = () => {
                   href="https://apps.apple.com/us/app/hive-spelling-bee-prep-app/id6479415050"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="cta-button secondary"
+                  className="cta-button secondary prepcenter"
                 >
-                  Download Hive App
+                  <span className="prepcenter-title">Download Hive App →</span>
+                  <span className="prepcenter-subtitle">App Store · iPhone & iPad</span>
                 </a>
               </div>
             </div>
