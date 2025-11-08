@@ -27,14 +27,6 @@ const Hero = () => {
                 Download Resume
               </a>
               <a
-                href="https://learn.spellingbee.ae"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button secondary"
-              >
-                Hive PrepCenter
-              </a>
-              <a
                 href="https://www.linkedin.com/in/ekansh-rastogi-378b41315/"
                 target="_blank"
                 rel="noopener noreferrer"
