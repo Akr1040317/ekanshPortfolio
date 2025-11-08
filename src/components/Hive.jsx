@@ -20,7 +20,7 @@ const Hive = () => {
   ];
 
   const statusItems = [
-    '500+ active users on platform',
+    '500+ active users across platforms',
     (
       <>
         Launched platform for The Spelling Bee Championship UAE (
@@ -63,7 +63,7 @@ const Hive = () => {
           </li>
           <li>
             <a href="https://spellingbee.com/blog/2022-finalist-speller-65-ekansh-rastogi" target="_blank" rel="noopener noreferrer">
-              Spelling Bee Blog Profile
+              Scripps National Spelling Bee Blog Profile
             </a>
           </li>
           <li>
