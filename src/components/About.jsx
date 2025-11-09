@@ -27,25 +27,18 @@ const About = () => {
               <div className="about-intro">
                 <h3>IB Senior at Seminole High School</h3>
                 <p>
-                  Words taught me to notice details. Training for the Scripps National Spelling Bee wasn’t just
-                  about memorizing roots and rules; it was an early lesson in curiosity, discipline, and pattern
-                  recognition. I learned to ask why a word looks the way it does, where it came from, and how
-                  meaning evolves. That same instinct drives my work today—whether I’m building a product,
-                  refining a process, or collaborating with a team.
+                  I am a senior studying in the IB Program, a 5th-place Finalist at the Scripps National Spelling Bee, the co-founder of Hive Education, and a national-level youth cricketer.
                 </p>
                 <p>
-                  As Co‑Founder of Hive Education LLC, I’m channeling that curiosity into entrepreneurship. I love
-                  turning ideas into useful tools, listening to learners, and shipping things that make education
-                  more accessible. The IB Diploma program sharpened my ability to synthesize across disciplines—
-                  engineering mindsets, human stories, and business constraints. I’m excited to keep building at the
-                  intersection of learning and technology, where thoughtful design can unlock potential for others.
+                  Competing in spelling bees throughout the country, I learned not to memorize words but to understand them and explore the why and how behind their spelling. From my research into the impact of the 1066 invasion on English legal vocabulary to running my EdTech startup Hive, I strive to embody that mindset of questioning and optimizing everything. As Co-Founder of Hive Education LLC., I’m working to change the way students approach learning to spell and develop critical grammar and vocabulary skills, while channeling my passion and curiosity into entrepreneurship. Through playing cricket, I’ve developed the discipline, determination, and critical thinking needed to excel in any endeavor. The IB program has strengthened my ability to combine disciplines to reach creative solutions and focus on listening and learning from others to lead effective and accessible educational technology ventures.
                 </p>
               </div>
 
               <div className="about-vision">
                 <h3>Looking Forward</h3>
-                <p>I'm excited about merging engineering with business to build EdTech solutions that make learning more accessible and effective.</p>
-                <p>My goal is to create platforms that help others discover their potential, whether through innovative learning methods, leadership opportunities, or community-building initiatives.</p>
+                <p>
+                  I’m excited to continue building new startups at the intersection of education and technology, where thoughtful design can unlock potential for students and educators everywhere.
+                </p>
               </div>
 
               <div className="certifications-section">
@@ -65,8 +58,11 @@ const About = () => {
           <ScrollAnimation animation="fade-left">
             <div className="about-profile">
               <div className="about-image-wrapper">
-                <img src={portrait} alt="Ekansh Rastogi professional portrait" />
+                <img src={portrait} alt="Ekansh Rastogi revisiting the Scripps National Spelling Bee stage in 2025" />
               </div>
+              <p className="about-image-caption">
+                Revisiting the Scripps National Spelling Bee stage in 2025 and creating promotional content for Hive.
+              </p>
               <div className="about-profile-card">
                 <h4>Highlights</h4>
                 <div className="highlights-grid profile">

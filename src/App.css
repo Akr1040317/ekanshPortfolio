@@ -863,6 +863,9 @@ a:focus-visible {
 .cricket-image-single {
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 }
 
 .cricket-stats-section-with-image .cricket-image-single {
@@ -886,6 +889,13 @@ a:focus-visible {
 
 .cricket-photo.landscape {
     aspect-ratio: 4 / 3;
+}
+
+.cricket-photo-caption {
+    margin-top: 0.6rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Lora', serif;
 }
 
 .cricket-stats-section {
@@ -1431,6 +1441,18 @@ a:focus-visible {
     box-shadow: 0 10px 30px rgba(74, 144, 226, 0.4);
 }
 
+.cta-button.hive-link {
+    background: var(--link-color);
+    color: #000;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.cta-button.hive-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(255, 165, 0, 0.3);
+}
+
 .cta-button.linkedin {
     background: #0a66c2;
     color: #ffffff;
@@ -1500,6 +1522,8 @@ a:focus-visible {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    gap: 0.75rem;
     position: relative;
     z-index: 1;
 }
@@ -1540,6 +1564,14 @@ a:focus-visible {
     display: block;
     position: relative;
     z-index: 0;
+}
+
+.hero-caption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Lora', serif;
+    text-align: center;
 }
 
 /* Contact section */
@@ -1692,6 +1724,14 @@ a:focus-visible {
     width: 100%;
     height: auto;
     display: block;
+}
+
+.about-image-caption {
+    margin-top: 0.75rem;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Lora', serif;
+    text-align: center;
 }
 
 .about-profile-card {

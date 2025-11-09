@@ -41,8 +41,11 @@ const Hero = () => {
         <ScrollAnimation animation="fade-left" delay={0.12}>
           <div className="hero-image-wrapper">
             <div className="hero-image-container">
-              <img src={heroImage} alt="Ekansh Rastogi" className="hero-image" />
+              <img src={heroImage} alt="Ekansh Rastogi spelling on stage at the 2022 Scripps National Spelling Bee" className="hero-image" />
             </div>
+            <p className="hero-caption">
+              Ekansh spelling during the 2022 Scripps National Spelling Bee, where he placed fifth.
+            </p>
           </div>
         </ScrollAnimation>
       </div>

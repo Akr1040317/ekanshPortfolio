@@ -18,18 +18,18 @@ const Projects = () => {
       years: 'In Development'
     },
     {
-      title: 'EE: The Norman Conquest & Legal English',
-      description: 'Investigated how the 1066 Norman invasion shaped English legal vocabulary by analyzing historical documents, historian testimony, and modern dictionaries. Compared Norman French influence with Roman and Viking contributions to define the cultural diffusion behind English law.',
-      icon: '📜',
-      placeholder: 'Extended Essay',
-      years: 'IB Diploma'
-    },
-    {
       title: 'Spellbound: A Parent\'s Guide to Raising Young Spellers',
       description: 'Currently writing a comprehensive guide for parents on raising young spellers, based on years of competition experience and coaching insights.',
       icon: '📖',
       placeholder: 'Writing Project',
       years: 'In Progress'
+    },
+    {
+      title: 'EE: The Norman Conquest & Legal English',
+      description: 'Investigated how the 1066 Norman invasion shaped English legal vocabulary by analyzing historical documents, historian testimony, and modern dictionaries. Compared Norman French influence with Roman and Viking contributions to define the cultural diffusion behind English law.',
+      icon: '📜',
+      placeholder: 'Extended Essay',
+      years: 'IB Diploma'
     },
     {
       title: 'Economics Research (Internal Assessments)',
@@ -54,6 +54,11 @@ const Projects = () => {
                     <h3>{project.title}</h3>
                     {project.years && <p className="project-years">{project.years}</p>}
                     <p>{project.description}</p>
+                    {project.title === 'Hive: Pattern-Based Spelling Platform' && (
+                      <a href="#hive" className="cta-button hive-link">
+                        Learn more about Hive →
+                      </a>
+                    )}
                   </div>
                 </div>
               </ScrollAnimation>

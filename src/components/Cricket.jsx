@@ -69,6 +69,9 @@ const Cricket = () => {
                 alt="Ekansh Rastogi holding the Sir Garfield Sobers trophy on the field"
                 className="cricket-photo portrait"
               />
+              <p className="cricket-photo-caption">
+                Holding the Sir Garfield Sobers International Under-19 Cricket Tournament trophy after winning the finals at the Kensington Oval in Barbados.
+              </p>
             </div>
           </ScrollAnimation>
           <ScrollAnimation animation="fade-left">
@@ -154,6 +157,9 @@ const Cricket = () => {
                 alt="Tri-State Development team celebrating together in Barbados"
                 className="cricket-photo landscape"
               />
+              <p className="cricket-photo-caption">
+                The USA New York Tri-State Development Team that went on to win the Sir Garfield Sobers International Under-19 Cricket Tournament.
+              </p>
             </div>
           </ScrollAnimation>
         </div>
@@ -166,6 +172,9 @@ const Cricket = () => {
                 alt="Ekansh Rastogi holding a match ball after a bowling performance"
                 className="cricket-photo portrait"
               />
+              <p className="cricket-photo-caption">
+                Proudly presenting the match ball from a five-wicket haul (5 wickets, 7 overs, 46 runs) during the AMLCA Elite Jr. Championship 2025 Division A Memorial Day Tournament.
+              </p>
             </div>
           </ScrollAnimation>
           <ScrollAnimation animation="fade-left">
@@ -211,6 +220,9 @@ const Cricket = () => {
                 alt="Ekansh Rastogi receiving the Sir Garfield Sobers championship trophy"
                 className="cricket-photo landscape"
               />
+              <p className="cricket-photo-caption">
+                Pictured in a Barbadian newspaper feature receiving the Sir Garfield Sobers International Under-19 Cricket Tournament trophy from Daniel Sobers, son of Sir Garfield Sobers.
+              </p>
             </div>
           </ScrollAnimation>
         </div>
