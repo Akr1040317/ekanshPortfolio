@@ -33,7 +33,11 @@ const Projects = () => {
     },
     {
       title: 'Economics Research (Internal Assessments)',
-      description: '1. Microeconomics: Federal tax credits\' effects on addressing positive consumption externalities in EV market. 2. Macroeconomics: Impact of dockworker strikes on U.S. economic output. 3. International Economics: Impact of tariffs and retaliatory action on global trade/interdependence.',
+      description: [
+        'Microeconomics: Federal tax credits\' effects on addressing positive consumption externalities in the EV market.',
+        'Macroeconomics: Impact of dockworker strikes on U.S. economic output.',
+        'International Economics: Impact of tariffs and retaliatory action on global trade and interdependence.'
+      ],
       icon: '📊',
       placeholder: 'Research Project',
       years: 'IB Diploma'
@@ -53,7 +57,13 @@ const Projects = () => {
                   <div className="project-info">
                     <h3>{project.title}</h3>
                     {project.years && <p className="project-years">{project.years}</p>}
-                    <p>{project.description}</p>
+                    {Array.isArray(project.description) ? (
+                      project.description.map((line, lineIndex) => (
+                        <p key={lineIndex}>{line}</p>
+                      ))
+                    ) : (
+                      <p>{project.description}</p>
+                    )}
                     {project.title === 'Hive: Pattern-Based Spelling Platform' && (
                       <a href="#hive" className="cta-button hive-link">
                         Learn more about Hive →

@@ -25,7 +25,7 @@ const About = () => {
           <ScrollAnimation animation="fade-right">
             <div className="about-text">
               <div className="about-intro">
-                <h3>IB Senior at Seminole High School</h3>
+                <h3>Competitor. Creator. Innovator.</h3>
                 <p>
                   I am a senior studying in the IB Program, a 5th-place Finalist at the Scripps National Spelling Bee, the co-founder of Hive Education, and a national-level youth cricketer.
                 </p>
