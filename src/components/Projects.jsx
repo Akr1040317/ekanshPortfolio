@@ -5,14 +5,15 @@ const Projects = () => {
   const projects = [
     {
       title: 'Hive: Pattern-Based Spelling Platform',
-      description: 'Hive is an online learning platform that teaches spelling through pattern recognition instead of rote memorization. Hive bundles lessons, quizzes, and teacher resources built from years of coaching and competition insights.',
+      description:
+        'Hive is an online learning platform that teaches spelling through pattern recognition instead of rote memorization. Hive bundles lessons, quizzes, and teacher resources built from years of coaching and competition insights.',
       icon: '🛠️',
       placeholder: 'EdTech Platform',
       years: '2021 – Present'
     },
     {
       title: 'HiveBot: AI Spelling Coach',
-      description: 'Designing an AI tutor inside Hive Spelling that guides students through etymology, patterns, and pronunciation with adaptive challenges and personalized feedback. Currently building conversational flows, challenge modes, and analytics for launch.',
+      description: 'Designing an AI tutor inside Hive Spelling that guides students through etymology, patterns, and pronunciation with adaptive challenges and personalized feedback. HiveBot aims to solve the challenge of hiring expensive tutors and deliver a more hyper-personalized and synchronized learning experience.',
       icon: '🤖',
       placeholder: 'AI Project',
       years: 'In Development'
@@ -26,7 +27,8 @@ const Projects = () => {
     },
     {
       title: 'EE: The Norman Conquest & Legal English',
-      description: 'Investigated how the 1066 Norman invasion shaped English legal vocabulary by analyzing historical documents, historian testimony, and modern dictionaries. Compared Norman French influence with Roman and Viking contributions to define the cultural diffusion behind English law.',
+      description:
+        'I decided to investigate the origins of English legal vocabulary through the lens of the 1066 Norman invasion of England. Through this extended essay, I studied historical documents, such as the Bayeux Tapestry, the Magna Carta, and Statutes of the Realm; historian testimony, such as Albert Baugh and Thomas Cable’s A History of the English Language; and English dictionaries such as Merriam-Webster’s Unabridged Online Dictionary. I was able to expand on the mindset that I had built throughout my spelling bee career and creating Hive, exploring how English had been shaped by nearly a millennia of complex cultural interactions. I compared the Normans’ French influence on legal vocabulary to the influence of the Romans and the Vikings, and I defined the types of cultural diffusion that had occurred (ex. Hierarchical and stimulus diffusion).',
       icon: '📜',
       placeholder: 'Extended Essay',
       years: 'IB Diploma'

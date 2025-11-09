@@ -99,9 +99,10 @@ const Hive = () => {
             <div className="hive-hero-copy">
               <h3>EdTech Startup Co-Founder</h3>
               <p>
-                Founded Hive to teach spelling through pattern recognition instead of rote memorization.
-                The platform bundles lessons, quizzes, and teacher resources built from years of coaching and
-                competition insights.
+                As a competitor, I noticed the growing prevalence of rote memorization not only in spelling bee preparation, but even in ELA classrooms. When I was competing, however, I became fascinated with an alternate approach, which entailed predicting how to spell certain sounds in a word based on its etymology (language of origin). This way, rather than memorizing the hundreds of thousands of words in the dictionary, a speller could learn 10-15 patterns and understand how to spell most, if not all, of the words from a particular etymology.
+              </p>
+              <p>
+                Hoping to create an impact on the spelling and ELA education community that had done so much for me, I co-founded Hive and adopted this same learning approach. I designed, created, and edited a curriculum that focused less on memorization and more on teaching spellers through pattern-recognition, spelling rules, and etymological observations I had accumulated over my 7+ years of competing in spelling bees and coaching spellers. Today, Hive is the official learning partner of the UAE Spelling Bee Championship and serves hundreds of spellers.
               </p>
               <div className="hive-links">
                 <a href="https://www.hivespelling.com/" target="_blank" rel="noopener noreferrer" className="cta-button primary prepcenter">
